@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maku Hanga — Agentur für Promotion, Recruiting & Sponsoring | Kärnten</title>
+  <meta name="description" content="Maku Hanga — Ihre Agentur für Promotion, Recruiting, Sponsoring und KI-Content aus Kärnten. Stilvolle Studentenwohnungen in Klagenfurt.">
+  <meta name="keywords" content="Agentur Kärnten, Promotion, Recruiting, Sponsoring, KI-Content, Studentenwohnungen Klagenfurt, Maku Hanga">
+  <meta name="author" content="Elisabeth Reiner-Kovarik">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.maku-hanga.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Maku Hanga — Alles außer gewöhnlich">
+  <meta property="og:description" content="Agentur für Promotion, Recruiting, Sponsoring und KI-Content aus Kärnten. Studentenwohnungen in Klagenfurt.">
+  <meta property="og:url" content="https://www.maku-hanga.com/">
+  <meta property="og:image" content="https://www.maku-hanga.com/logo.png">
+  <meta property="og:locale" content="de_AT">
+  <link rel="icon" type="image/png" href="logo.png">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Maku Hanga","description":"Agentur für Promotion, Recruiting, Sponsoring und KI-Content aus Kärnten, Österreich.","url":"https://www.maku-hanga.com","telephone":"+4369010401004","email":"office@maku-hanga.com","address":{"@type":"PostalAddress","streetAddress":"Dürrenmoos 11a","addressLocality":"Völkermarkt","postalCode":"9111","addressRegion":"Kärnten","addressCountry":"AT"},"founder":{"@type":"Person","name":"Elisabeth Reiner-Kovarik"},"areaServed":["AT","DE","CH"]}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --orange: #d28b2f;
+      --gold: #f5a623;
+      --ember: #e8650a;
+      --cream: #faf6f0;
+      --sand: #f0e8da;
+      --charcoal: #1a1a1a;
+      --warm: #3d3530;
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-hand: 'Caveat', cursive;
+    }
+
+    html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+    body {
+      background: var(--cream);
+      color: var(--charcoal);
+      font-family: var(--font-body);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    ::selection { background: rgba(210,139,47,0.3); }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; }
+
+    /* ---- GRAIN OVERLAY ---- */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* ---- NAV ---- */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(250,246,240,0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(210,139,47,0.08);
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-brand { display: flex; align-items: center; gap: 0.75rem; }
+    .nav-brand img { width: 40px; height: 40px; border-radius: 50%; transition: transform 0.3s; }
+    .nav-brand:hover img { transform: scale(1.1); }
+    .nav-brand span { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; letter-spacing: -0.02em; }
+    .nav-links { display: flex; align-items: center; gap: 2rem; font-size: 0.9rem; font-weight: 500; }
+    .nav-links a { transition: color 0.2s; }
+    .nav-links a:hover { color: var(--orange); }
+    .nav-cta {
+      padding: 0.6rem 1.4rem; background: var(--charcoal); color: #fff;
+      border-radius: 50px; font-size: 0.85rem; font-weight: 600;
+      transition: all 0.3s; border: none; cursor: pointer;
+    }
+    .nav-cta:hover { background: var(--orange); transform: scale(1.05); }
+
+    /* Mobile menu */
+    .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+    .hamburger svg { width: 24px; height: 24px; }
+    .mobile-menu { display: none; padding: 0 1.5rem 1rem; }
+    .mobile-menu a { display: block; padding: 0.5rem 0; font-size: 0.9rem; font-weight: 500; }
+    .mobile-menu a:hover { color: var(--orange); }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: block; }
+      .mobile-menu.open { display: block; }
+    }
+
+    /* ---- HERO ---- */
+    .hero {
+      min-height: 100vh; display: flex; align-items: center;
+      padding: 7rem 1.5rem 4rem; position: relative; overflow: hidden;
+    }
+    .hero-bg { position: absolute; inset: 0; pointer-events: none; }
+    .hero-blob {
+      position: absolute; border-radius: 50%; filter: blur(80px);
+      animation: blobFloat 6s ease-in-out infinite;
+    }
+    .hero-blob-1 { top: 5%; right: 5%; width: 300px; height: 300px; background: rgba(210,139,47,0.06); }
+    .hero-blob-2 { bottom: 20%; left: 5%; width: 400px; height: 400px; background: rgba(245,166,35,0.05); animation-delay: 3s; }
+    .hero-dot {
+      position: absolute; border-radius: 50%; animation: dotPulse 4s cubic-bezier(0.4,0,0.6,1) infinite;
+    }
+    .hero-dot-1 { top: 33%; right: 25%; width: 8px; height: 8px; background: var(--orange); }
+    .hero-dot-2 { top: 66%; left: 33%; width: 12px; height: 12px; background: var(--gold); animation-delay: 1s; }
+    .hero-dot-3 { top: 50%; right: 33%; width: 6px; height: 6px; background: var(--ember); animation-delay: 2s; }
+    .hero-line { position: absolute; top: 0; bottom: 0; width: 1px; opacity: 0.08; background: var(--orange); }
+    .hero-line-1 { left: 70%; transform: rotate(-15deg); transform-origin: top; }
+    .hero-line-2 { left: 80%; transform: rotate(-15deg); transform-origin: top; opacity: 0.05; }
+
+    .hero-grid {
+      max-width: 1200px; margin: 0 auto; width: 100%;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+    }
+    .hero-text { position: relative; z-index: 2; }
+    .hero-badge {
+      display: inline-block; padding: 0.4rem 1rem; border-radius: 50px;
+      background: rgba(210,139,47,0.1); color: var(--orange);
+      font-size: 0.85rem; font-weight: 600; letter-spacing: 0.03em;
+      margin-bottom: 1.5rem; animation: slideUp 0.8s ease-out both;
+    }
+    .hero-title {
+      font-family: var(--font-display); font-size: clamp(2.8rem, 5.5vw, 4.5rem);
+      font-weight: 700; line-height: 0.95; letter-spacing: -0.03em;
+      animation: slideUp 0.8s ease-out 0.15s both;
+    }
+    .hero-title .accent { color: var(--orange); }
+    .brush-underline {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12'%3E%3Cpath d='M2 8 Q50 2 100 7 Q150 12 198 4' fill='none' stroke='%23d28b2f' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: bottom left; background-size: 100% 12px;
+      padding-bottom: 8px;
+    }
+    .hero-sub {
+      margin-top: 2rem; font-size: 1.15rem; color: rgba(61,53,48,0.6); max-width: 480px; line-height: 1.7;
+      animation: slideUp 0.8s ease-out 0.3s both;
+    }
+    .hero-sub .hand { font-family: var(--font-hand); font-size: 1.6rem; color: var(--orange); display: block; margin-top: 0.3rem; }
+    .hero-buttons {
+      margin-top: 2.5rem; display: flex; flex-wrap: wrap; gap: 1rem;
+      animation: slideUp 0.8s ease-out 0.45s both;
+    }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 1rem 2rem; background: var(--charcoal); color: #fff;
+      border-radius: 50px; font-size: 0.9rem; font-weight: 600;
+      transition: all 0.3s; border: none; cursor: pointer;
+    }
+    .btn-primary:hover { background: var(--orange); transform: scale(1.05); box-shadow: 0 10px 30px rgba(210,139,47,0.2); }
+    .btn-primary .arrow { transition: transform 0.3s; }
+    .btn-primary:hover .arrow { transform: translateX(4px); }
+    .btn-secondary {
+      display: inline-flex; padding: 1rem 2rem;
+      border: 2px solid rgba(26,26,26,0.12); border-radius: 50px;
+      font-size: 0.9rem; font-weight: 600; transition: all 0.3s;
+    }
+    .btn-secondary:hover { border-color: var(--orange); color: var(--orange); }
+
+    .hero-visual { display: flex; justify-content: center; position: relative; }
+    .logo-ring {
+      position: absolute; inset: -2rem; animation: spinSlow 20s linear infinite;
+    }
+    .logo-ring text { fill: rgba(210,139,47,0.15); font-family: var(--font-display); font-size: 10px; text-transform: uppercase; letter-spacing: 0.3em; }
+    .hero-logo {
+      width: 280px; height: 280px; border-radius: 50%;
+      box-shadow: 0 25px 60px rgba(210,139,47,0.15);
+      transition: all 0.5s;
+    }
+    .hero-logo:hover { transform: scale(1.05); box-shadow: 0 25px 60px rgba(210,139,47,0.3); }
+
+    .scroll-hint {
+      position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+      animation: fadeIn 1s ease-out 1.5s both;
+    }
+    .scroll-hint span { font-size: 0.7rem; color: rgba(61,53,48,0.3); text-transform: uppercase; letter-spacing: 0.15em; }
+    .scroll-hint .line { width: 1px; height: 32px; background: linear-gradient(to bottom, var(--orange), transparent); }
+
+    @media (max-width: 768px) {
+      .hero-grid { grid-template-columns: 1fr; text-align: center; }
+      .hero-sub { margin-left: auto; margin-right: auto; }
+      .hero-buttons { justify-content: center; }
+      .hero-visual { order: -1; margin-bottom: 2rem; }
+      .hero-logo { width: 200px; height: 200px; }
+      .logo-ring { inset: -1.5rem; }
+      .scroll-hint { display: none; }
+    }
+
+    /* ---- MARQUEE ---- */
+    .marquee { padding: 1.2rem 0; background: var(--charcoal); overflow: hidden; }
+    .marquee-track {
+      display: flex; white-space: nowrap;
+      animation: marquee 20s linear infinite;
+    }
+    .marquee-track:hover { animation-play-state: paused; }
+    .marquee-item {
+      display: flex; align-items: center; gap: 1.5rem; padding: 0 1.5rem;
+      color: rgba(255,255,255,0.5); font-family: var(--font-display);
+      font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em;
+    }
+    .marquee-dot { color: var(--orange); }
+
+    /* ---- SECTIONS ---- */
+    section { padding: 6rem 1.5rem; }
+    @media (max-width: 768px) { section { padding: 4rem 1.5rem; } }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label { font-family: var(--font-hand); font-size: 1.5rem; color: var(--orange); }
+    .section-title {
+      font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 700; line-height: 1.1; margin-top: 0.3rem; letter-spacing: -0.02em;
+    }
+    .section-title .accent { color: var(--orange); }
+
+    /* ---- SERVICES GRID ---- */
+    .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 4rem; }
+    .service-card {
+      padding: 2rem; border-radius: 1.2rem; border: 1px solid rgba(26,26,26,0.04);
+      background: #fff; transition: all 0.5s; cursor: default;
+    }
+    .service-card:hover { background: var(--charcoal); color: #fff; transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    .service-icon {
+      width: 56px; height: 56px; border-radius: 12px; background: rgba(210,139,47,0.1);
+      display: flex; align-items: center; justify-content: center; font-size: 1.5rem;
+      margin-bottom: 1.5rem; transition: background 0.5s;
+    }
+    .service-card:hover .service-icon { background: var(--orange); }
+    .service-card h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem; }
+    .service-card p { font-size: 0.88rem; line-height: 1.65; opacity: 0.6; }
+    .service-card:hover p { opacity: 0.85; }
+
+    @media (max-width: 1024px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } }
+
+    /* ---- ABOUT (dark diagonal) ---- */
+    .about {
+      background: var(--charcoal); color: #fff;
+      clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0 100%);
+      padding: 8rem 1.5rem 6rem;
+    }
+    @media (max-width: 768px) { .about { clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0 100%); padding-top: 5rem; } }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .about p { color: rgba(255,255,255,0.5); line-height: 1.75; font-size: 1.05rem; margin-top: 1.2rem; }
+    .about .hand-big { font-family: var(--font-hand); font-size: clamp(2.5rem, 5vw, 3.5rem); color: var(--gold); display: block; margin-top: 0.3rem; }
+
+    .stats { display: flex; flex-direction: column; gap: 1.2rem; }
+    .stat {
+      display: flex; align-items: center; gap: 1.5rem; padding: 1.2rem;
+      border-radius: 12px; background: rgba(255,255,255,0.04);
+      transition: background 0.3s;
+    }
+    .stat:hover { background: rgba(255,255,255,0.08); }
+    .stat-number { font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; color: var(--orange); min-width: 80px; }
+    .stat-label { font-weight: 600; }
+    .stat-sub { font-size: 0.8rem; color: rgba(255,255,255,0.35); margin-top: 0.15rem; }
+
+    @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; } }
+
+    /* ---- FLATS ---- */
+    .flats { position: relative; overflow: hidden; }
+    .flats-bg { position: absolute; top: 0; right: 0; width: 50%; height: 100%; background: linear-gradient(to left, rgba(240,232,218,0.5), transparent); pointer-events: none; }
+    .flats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 4rem; }
+    .flat-card {
+      padding: 1.5rem; border-radius: 1.2rem; background: #fff;
+      border: 1px solid rgba(210,139,47,0.05); transition: all 0.3s;
+    }
+    .flat-card:hover { border-color: rgba(210,139,47,0.2); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+    .flat-card .emoji { font-size: 1.8rem; }
+    .flat-card h3 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; margin: 1rem 0 0.5rem; }
+    .flat-card p { font-size: 0.85rem; line-height: 1.65; color: rgba(61,53,48,0.55); }
+
+    .flats-cta { margin-top: 3rem; text-align: center; }
+    .btn-orange {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      padding: 1rem 2rem; background: var(--orange); color: #fff;
+      border-radius: 50px; font-weight: 600; font-size: 0.9rem;
+      transition: all 0.3s; border: none; cursor: pointer;
+    }
+    .btn-orange:hover { background: var(--ember); transform: scale(1.05); box-shadow: 0 10px 30px rgba(210,139,47,0.3); }
+
+    @media (max-width: 1024px) { .flats-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .flats-grid { grid-template-columns: 1fr; } }
+
+    /* ---- SHOWCASE (dark diagonal) ---- */
+    .showcase {
+      background: var(--charcoal); color: #fff;
+      clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0 100%);
+      padding: 8rem 1.5rem 6rem;
+    }
+    @media (max-width: 768px) { .showcase { clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0 100%); padding-top: 5rem; } }
+    .showcase-card {
+      margin-top: 4rem; padding: 3rem; border-radius: 1.5rem;
+      background: linear-gradient(135deg, rgba(210,139,47,0.15), rgba(245,166,35,0.05), transparent);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: border-color 0.5s; position: relative; overflow: hidden;
+    }
+    .showcase-card:hover { border-color: rgba(210,139,47,0.3); }
+    .showcase-card .bg-glow {
+      position: absolute; top: 0; right: 0; width: 50%; height: 100%;
+      background: linear-gradient(to left, rgba(210,139,47,0.05), transparent);
+      pointer-events: none;
+    }
+    .showcase-badge {
+      display: inline-block; padding: 0.3rem 0.8rem; border-radius: 50px;
+      background: rgba(210,139,47,0.2); color: var(--orange);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .showcase-card h3 { font-family: var(--font-display); font-size: 2rem; font-weight: 700; }
+    .showcase-card > p, .showcase-card .desc { color: rgba(255,255,255,0.5); line-height: 1.7; font-size: 1.05rem; margin-top: 1rem; max-width: 640px; }
+    .showcase-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.2rem; }
+    .showcase-tag { padding: 0.3rem 0.8rem; border-radius: 50px; background: rgba(255,255,255,0.05); font-size: 0.75rem; color: rgba(255,255,255,0.35); }
+    .showcase-buttons { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+    .btn-white {
+      padding: 0.75rem 1.5rem; background: #fff; color: var(--charcoal);
+      border-radius: 50px; font-size: 0.85rem; font-weight: 600;
+      transition: all 0.3s; border: none;
+    }
+    .btn-white:hover { background: var(--orange); color: #fff; }
+    .btn-outline-white {
+      padding: 0.75rem 1.5rem; border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 50px; font-size: 0.85rem; font-weight: 600;
+      transition: all 0.3s; color: #fff;
+    }
+    .btn-outline-white:hover { border-color: var(--orange); color: var(--orange); }
+
+    /* ---- CONTACT ---- */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-top: 2rem; }
+    .contact-info { display: flex; flex-direction: column; gap: 1rem; margin-top: 2.5rem; }
+    .contact-item {
+      display: flex; align-items: center; gap: 1rem; padding: 1rem;
+      border-radius: 12px; background: #fff; border: 1px solid rgba(26,26,26,0.04);
+      transition: all 0.3s;
+    }
+    .contact-item:hover { border-color: rgba(210,139,47,0.2); box-shadow: 0 5px 15px rgba(0,0,0,0.04); }
+    .contact-icon {
+      width: 40px; height: 40px; border-radius: 10px; background: rgba(210,139,47,0.1);
+      display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;
+      transition: all 0.3s;
+    }
+    .contact-item:hover .contact-icon { background: var(--orange); }
+    .contact-small { font-size: 0.8rem; color: rgba(61,53,48,0.4); }
+    .contact-value { font-weight: 600; font-size: 0.95rem; }
+
+    .contact-form {
+      background: #fff; border-radius: 1.5rem; padding: 2rem;
+      border: 1px solid rgba(26,26,26,0.04);
+    }
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label { display: block; font-size: 0.85rem; font-weight: 500; color: rgba(61,53,48,0.6); margin-bottom: 0.5rem; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: 0.8rem 1rem; border-radius: 12px;
+      border: 1px solid rgba(26,26,26,0.08); background: var(--cream);
+      font-family: var(--font-body); font-size: 0.9rem; color: var(--charcoal);
+      transition: all 0.3s; outline: none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--orange); box-shadow: 0 0 0 3px rgba(210,139,47,0.1);
+    }
+    .form-group textarea { resize: none; min-height: 100px; }
+    .btn-submit {
+      width: 100%; padding: 1rem; background: var(--charcoal); color: #fff;
+      border-radius: 12px; font-family: var(--font-body); font-size: 0.9rem; font-weight: 600;
+      border: none; cursor: pointer; transition: all 0.3s;
+    }
+    .btn-submit:hover { background: var(--orange); box-shadow: 0 10px 30px rgba(210,139,47,0.2); }
+    .form-note { text-align: center; font-size: 0.75rem; color: rgba(61,53,48,0.3); margin-top: 0.8rem; }
+
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+
+    /* ---- FOOTER ---- */
+    footer { background: var(--charcoal); color: #fff; }
+    .footer-cta { max-width: 1200px; margin: 0 auto; padding: 4rem 1.5rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .footer-cta h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 700; }
+    .footer-cta .accent { color: var(--orange); }
+    .footer-cta .btn-orange { margin-top: 1.5rem; }
+
+    .footer-grid {
+      max-width: 1200px; margin: 0 auto; padding: 3rem 1.5rem;
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem;
+      font-size: 0.85rem; color: rgba(255,255,255,0.35);
+    }
+    .footer-grid img { width: 48px; height: 48px; border-radius: 50%; margin-bottom: 1rem; }
+    .footer-grid h4 { color: #fff; font-weight: 600; margin-bottom: 0.75rem; font-size: 0.9rem; }
+    .footer-grid ul { list-style: none; }
+    .footer-grid li { margin-bottom: 0.4rem; }
+    .footer-grid a:hover { color: var(--orange); }
+
+    .footer-legal {
+      max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      font-size: 0.75rem; color: rgba(255,255,255,0.25); line-height: 1.8;
+    }
+    .footer-legal h4 { color: rgba(255,255,255,0.5); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.5rem; }
+    .footer-legal a { color: rgba(255,255,255,0.35); }
+    .footer-legal a:hover { color: var(--orange); }
+    .footer-legal + .footer-legal { padding-top: 2rem; }
+
+    .footer-bottom {
+      max-width: 1200px; margin: 0 auto; padding: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.75rem; color: rgba(255,255,255,0.15);
+    }
+
+    @media (max-width: 768px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+    }
+    @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
+
+    /* ---- REVEAL ANIMATION ---- */
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16,1,0.3,1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ---- KEYFRAMES ---- */
+    @keyframes slideUp { 0% { transform: translateY(40px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+    @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes blobFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+    @keyframes dotPulse { 0%,100% { opacity: 0.3; transform: scale(1); } 50% { opacity: 1; transform: scale(1.5); } }
+    @keyframes spinSlow { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <img src="logo.png" alt="Maku Hanga">
+        <span>maku hanga</span>
+      </a>
+      <div class="nav-links">
+        <a href="#agentur">Agentur</a>
+        <a href="#wohnen">Wohnen</a>
+        <a href="#projekte">Projekte</a>
+        <a href="#kontakt" class="nav-cta">Kontakt</a>
+      </div>
+      <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('open')" aria-label="Menü">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="#agentur" onclick="this.parentElement.classList.remove('open')">Agentur</a>
+      <a href="#wohnen" onclick="this.parentElement.classList.remove('open')">Wohnen</a>
+      <a href="#projekte" onclick="this.parentElement.classList.remove('open')">Projekte</a>
+      <a href="#kontakt" onclick="this.parentElement.classList.remove('open')" style="color:var(--orange);">Kontakt →</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+      <div class="hero-dot hero-dot-1"></div>
+      <div class="hero-dot hero-dot-2"></div>
+      <div class="hero-dot hero-dot-3"></div>
+      <div class="hero-line hero-line-1"></div>
+      <div class="hero-line hero-line-2"></div>
+    </div>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-badge">🔥 Let's do it!</div>
+        <h1 class="hero-title">
+          Wir machen<br>
+          <span class="accent brush-underline">das Unmögliche</span><br>
+          möglich.
+        </h1>
+        <p class="hero-sub">
+          Promotion · Recruiting · Sponsoring · KI-Content
+          <span class="hand">— und Studentenwohnungen in Klagenfurt.</span>
+        </p>
+        <div class="hero-buttons">
+          <a href="#kontakt" class="btn-primary">Projekt besprechen <span class="arrow">→</span></a>
+          <a href="#agentur" class="btn-secondary">Was wir tun</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div style="position:relative;">
+          <svg class="logo-ring" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs><path id="tp" d="M100,100 m-85,0 a85,85 0 1,1 170,0 a85,85 0 1,1 -170,0"/></defs>
+            <text><textPath href="#tp">maku hanga · wir schaffen es · let's do it · promotion · recruiting · sponsoring · </textPath></text>
+          </svg>
+          <img src="logo.png" alt="Maku Hanga — Let's do it!" class="hero-logo">
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="marquee-item"><span>Promotion</span><span class="marquee-dot">✦</span><span>Recruiting</span><span class="marquee-dot">✦</span><span>Sponsoring</span><span class="marquee-dot">✦</span><span>KI-Content</span><span class="marquee-dot">✦</span><span>Studentenwohnungen</span><span class="marquee-dot">✦</span><span>Kärnten</span><span class="marquee-dot">✦</span><span>Klagenfurt</span><span class="marquee-dot">✦</span><span>Let's do it</span><span class="marquee-dot">✦</span></div>
+      <div class="marquee-item"><span>Promotion</span><span class="marquee-dot">✦</span><span>Recruiting</span><span class="marquee-dot">✦</span><span>Sponsoring</span><span class="marquee-dot">✦</span><span>KI-Content</span><span class="marquee-dot">✦</span><span>Studentenwohnungen</span><span class="marquee-dot">✦</span><span>Kärnten</span><span class="marquee-dot">✦</span><span>Klagenfurt</span><span class="marquee-dot">✦</span><span>Let's do it</span><span class="marquee-dot">✦</span></div>
+    </div>
+  </div>
+
+  <!-- AGENTUR -->
+  <section id="agentur">
+    <div class="section-inner">
+      <div class="reveal">
+        <span class="section-label">Was wir tun</span>
+        <h2 class="section-title">Ihre Agentur für<br><span class="accent">alles außer gewöhnlich.</span></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">📣</div>
+          <h3>Promotion</h3>
+          <p>Kampagnen, die auffallen — nicht untergehen. Kreatives Marketing, das Ihre Marke in den Köpfen verankert.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🎯</div>
+          <h3>Recruiting</h3>
+          <p>Die richtigen Menschen finden. Zielgerichtet, persönlich, ohne Bewerbungs-Massenware.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🤝</div>
+          <h3>Sponsoring</h3>
+          <p>Strategische Partnerschaften aufbauen, die beiden Seiten Mehrwert bringen — nicht nur Logos.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🤖</div>
+          <h3>KI-Content</h3>
+          <p>Professionelle Videos, Texte und visuelle Inhalte — mit KI-Unterstützung für maximale Effizienz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÜBER UNS -->
+  <section class="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="reveal">
+          <span class="section-label">Über uns</span>
+          <h2 class="section-title" style="color:#fff;">Maku Hanga heißt<br><span class="hand-big">"Wir schaffen es!"</span></h2>
+          <p>Aus der Maori-Sprache. Weil wir daran glauben, dass jedes Projekt, jede Idee und jedes Ziel erreichbar ist — wenn man den Mut hat, anzufangen.</p>
+          <p>Wir sind eine Agentur aus Kärnten, die zwei Dinge besonders gut kann: Unternehmen sichtbar machen — und Studierenden ein Zuhause geben. Klingt ungewöhnlich? Ist es auch. Genau das macht uns aus.</p>
+        </div>
+        <div class="stats reveal">
+          <div class="stat">
+            <span class="stat-number">10+</span>
+            <div><div class="stat-label">Jahre Erfahrung</div><div class="stat-sub">in Business & Consulting</div></div>
+          </div>
+          <div class="stat">
+            <span class="stat-number">16+</span>
+            <div><div class="stat-label">Studentenzimmer</div><div class="stat-sub">in Klagenfurt</div></div>
+          </div>
+          <div class="stat">
+            <span class="stat-number">∞</span>
+            <div><div class="stat-label">Ideen pro Minute</div><div class="stat-sub">(mindestens gefühlt)</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WOHNEN -->
+  <section id="wohnen" class="flats">
+    <div class="flats-bg"></div>
+    <div class="section-inner" style="position:relative;z-index:2;">
+      <div class="reveal" style="max-width:640px;">
+        <span class="section-label">Wohnen in Klagenfurt</span>
+        <h2 class="section-title">Skandinavischer Stil.<br><span class="accent">Kärntner Gemütlichkeit.</span></h2>
+        <p style="margin-top:1.5rem;color:rgba(61,53,48,0.55);line-height:1.75;font-size:1.05rem;">Stilvolle WG-Zimmer für Studierende — hell, modern, all-inclusive. Vom Rothauer Hochhaus mit Blick auf die Karawanken bis zu gemütlichen Wohnungen in Uninähe.</p>
+      </div>
+      <div class="flats-grid">
+        <div class="flat-card reveal"><span class="emoji">🏠</span><h3>All-Inclusive Warmmiete</h3><p>Strom, Heizung, Wasser, Müll — alles drin. Keine versteckten Nebenkosten.</p></div>
+        <div class="flat-card reveal"><span class="emoji">🛋️</span><h3>Voll möbliert</h3><p>Einziehen und wohlfühlen. Skandi-Stil mit allem, was du brauchst.</p></div>
+        <div class="flat-card reveal"><span class="emoji">📍</span><h3>Beste Lage</h3><p>Innenstadt, Uninähe, Lendkanal. Mit Rad oder Öffis überall schnell hin.</p></div>
+        <div class="flat-card reveal"><span class="emoji">🔑</span><h3>Flexible Mietdauer</h3><p>Kein starres Studienjahr. Individuelle Verträge, die zu dir passen.</p></div>
+        <div class="flat-card reveal"><span class="emoji">🏔️</span><h3>Karawanken-Blick</h3><p>Südostbalkon, Dreifachverglasung, energetisch saniert. Ruhig trotz Stadt.</p></div>
+        <div class="flat-card reveal"><span class="emoji">👥</span><h3>Wachsende Community</h3><p>16+ Zimmer für Studierende, Schüler, FH — alle, die ein Zuhause suchen.</p></div>
+      </div>
+      <div class="flats-cta reveal">
+        <a href="https://flats.maku-hanga.com" target="_blank" rel="noopener noreferrer" class="btn-orange">🏠 Zimmer ansehen auf flats.maku-hanga.com ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE -->
+  <section id="projekte" class="showcase">
+    <div class="section-inner" style="text-align:center;max-width:800px;margin:0 auto;">
+      <div class="reveal">
+        <span class="section-label">Showcase</span>
+        <h2 class="section-title" style="color:#fff;">Was wir gerade bauen.</h2>
+        <p style="margin-top:1rem;color:rgba(255,255,255,0.4);">Unsere Projekte sind Experimente — öffentlich, transparent, ohne Schönfärberei.</p>
+      </div>
+    </div>
+    <div class="section-inner" style="max-width:1200px;margin:0 auto;">
+      <div class="showcase-card reveal">
+        <div class="bg-glow"></div>
+        <div style="position:relative;z-index:2;max-width:640px;">
+          <span class="showcase-badge">Live Experiment</span>
+          <h3>Lizzy AI Solutions</h3>
+          <p class="desc">Kann man mit KI-Avataren und unter 50 €/Monat Budget ein Online-Business aufbauen? Lizzy, Robert und Klaus zeigen die echten Zahlen — transparent, ehrlich, ohne Hype.</p>
+          <div class="showcase-tags">
+            <span class="showcase-tag">KI-Avatare</span>
+            <span class="showcase-tag">YouTube</span>
+            <span class="showcase-tag">Affiliate</span>
+            <span class="showcase-tag">DACH-Markt</span>
+          </div>
+          <div class="showcase-buttons">
+            <a href="https://youtube.com/@LizzyAISolutions" target="_blank" rel="noopener noreferrer" class="btn-white">📺 YouTube Kanal</a>
+            <a href="https://wore2706-lgtm.github.io/lizzy-experiment-dashboard/" target="_blank" rel="noopener noreferrer" class="btn-outline-white">📊 Live Dashboard</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt">
+    <div class="section-inner">
+      <div class="contact-grid">
+        <div class="reveal">
+          <span class="section-label">Kontakt</span>
+          <h2 class="section-title">Lust auf was<br><span class="accent">Außergewöhnliches?</span></h2>
+          <p style="margin-top:1.5rem;color:rgba(61,53,48,0.55);font-size:1.1rem;">Erzählen Sie uns von Ihrem Projekt. Oder schreiben Sie einfach "Hallo" — wir beißen nicht.</p>
+          <div class="contact-info">
+            <a href="mailto:office@maku-hanga.com" class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <div><div class="contact-small">E-Mail</div><div class="contact-value">office@maku-hanga.com</div></div>
+            </a>
+            <a href="tel:+4369010401004" class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div><div class="contact-small">Telefon</div><div class="contact-value">+43 690 104 010 04</div></div>
+            </a>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div><div class="contact-small">Standort</div><div class="contact-value">Kärnten, Österreich</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <form action="mailto:office@maku-hanga.com" method="POST" enctype="text/plain" class="contact-form">
+            <div class="form-group"><label>Ihr Name</label><input type="text" name="name" required placeholder="Max Mustermann"></div>
+            <div class="form-group"><label>E-Mail</label><input type="email" name="email" required placeholder="max@beispiel.at"></div>
+            <div class="form-group"><label>Interesse an</label><select name="interesse"><option>Promotion & Marketing</option><option>Recruiting</option><option>Sponsoring</option><option>KI-Content Produktion</option><option>Studentenzimmer in Klagenfurt</option><option>Sonstiges</option></select></div>
+            <div class="form-group"><label>Nachricht</label><textarea name="nachricht" rows="4" required placeholder="Erzählen Sie uns von Ihrem Vorhaben..."></textarea></div>
+            <button type="submit" class="btn-submit">Nachricht senden →</button>
+            <p class="form-note">Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-cta">
+      <h2>Bereit, etwas <span class="accent">Außergewöhnliches</span> zu starten?</h2>
+      <a href="#kontakt" class="btn-orange">Let's do it! 🔥</a>
+    </div>
+    <div class="footer-grid">
+      <div>
+        <img src="logo.png" alt="Maku Hanga">
+        <p>Maku Hanga — Agentur für Promotion, Recruiting & Sponsoring. Aus Kärnten, für den DACH-Raum.</p>
+      </div>
+      <div>
+        <h4>Leistungen</h4>
+        <ul><li><a href="#agentur">Promotion</a></li><li><a href="#agentur">Recruiting</a></li><li><a href="#agentur">Sponsoring</a></li><li><a href="#agentur">KI-Content</a></li></ul>
+      </div>
+      <div>
+        <h4>Projekte</h4>
+        <ul><li><a href="https://flats.maku-hanga.com">Flats Klagenfurt</a></li><li><a href="https://youtube.com/@LizzyAISolutions">Lizzy AI Solutions</a></li></ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul><li><a href="#impressum">Impressum</a></li><li><a href="#datenschutz">Datenschutz</a></li></ul>
+      </div>
+    </div>
+    <div id="impressum" class="footer-legal">
+      <h4>Impressum gemäß § 5 ECG</h4>
+      <p><strong style="color:rgba(255,255,255,0.5);">Maku Hanga</strong> — Agentur für Promotion, Recruiting & Sponsoring<br>
+      Elisabeth Reiner-Kovarik (EPU — Einzelpersonenunternehmen)<br>
+      Dürrenmoos 11a, 9111 Völkermarkt, Österreich · UID: ATU82604326</p>
+      <p>Tel.: <a href="tel:+4369010401004">+43 690 104 010 04</a> · E-Mail: <a href="mailto:office@maku-hanga.com">office@maku-hanga.com</a></p>
+      <p>Unternehmensgegenstand: Werbung und Marketing · Mitglied der WKO Kärnten<br>Aufsichtsbehörde: Bezirkshauptmannschaft Völkermarkt</p>
+    </div>
+    <div id="datenschutz" class="footer-legal">
+      <h4>Datenschutzerklärung</h4>
+      <p>Wir nehmen den Schutz Ihrer persönlichen Daten ernst. Personenbezogene Daten werden nur im technisch notwendigen Umfang erhoben (DSGVO Art. 6 Abs. 1 lit. a, b, f). Diese Website verwendet keine Cookies und keine Tracking-Tools. Daten werden nicht an Dritte weitergegeben.</p>
+      <p>Bei Anfragen über das Kontaktformular werden Ihre Angaben zur Bearbeitung gespeichert. Sie haben jederzeit Recht auf Auskunft, Berichtigung und Löschung. Kontakt: <a href="mailto:office@maku-hanga.com">office@maku-hanga.com</a></p>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Maku Hanga · Alle Rechte vorbehalten</span>
+      <span>Gebaut mit <span style="color:var(--orange);">♥</span> in Kärnten</span>
+    </div>
+  </footer>
+
+  <script>
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.1 }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
