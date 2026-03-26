@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <title>Maku Hanga – Kreativagentur &amp; Studentenwohnungen Klagenfurt | Kärnten</title>
-  <meta name="description" content="Maku Hanga – Kreativagentur für Marketing, Recruiting &amp; Sponsoring in Kärnten. Plus moderne Studentenwohnungen in Klagenfurt im Skandi-Stil. All-inclusive, direkt einziehbar. Let's do it!" />
-  <meta name="keywords" content="Marketingagentur Kärnten, Studentenwohnungen Klagenfurt, Recruiting Kärnten, Sponsoring, KI Content, Promotion, WG Klagenfurt, Völkermarkt" />
+  <title>Maku Hanga – Kreativagentur &amp; Studentenwohnungen im DACH-Raum | Deutschland · Österreich · Schweiz</title>
+  <meta name="description" content="Maku Hanga – Kreativagentur für Marketing, Recruiting &amp; Sponsoring im DACH-Raum (Deutschland, Österreich, Schweiz). Plus moderne Studentenwohnungen in Klagenfurt im Skandi-Stil. All-inclusive, direkt einziehbar. Let's do it!" />
+  <meta name="keywords" content="Marketingagentur DACH, Studentenwohnungen Klagenfurt, Recruiting Deutschland Österreich Schweiz, Sponsoring DACH, KI Content, Promotion, WG Klagenfurt, Studentenwohnungen Österreich, Marketingagentur Österreich, Recruiting Schweiz" />
   <meta name="author" content="Maku Hanga – Elisabeth Reiner-Kovarik" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.maku-hanga.com" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Maku Hanga – Kreativagentur &amp; Studentenwohnungen Klagenfurt" />
-  <meta property="og:description" content="Marketing, Recruiting &amp; Sponsoring für KMUs in Kärnten. Moderne Studentenwohnungen in Klagenfurt all-inclusive. Maku Hanga – Let's do it!" />
+  <meta property="og:description" content="Marketing, Recruiting &amp; Sponsoring für KMUs im DACH-Raum (Deutschland, Österreich, Schweiz). Moderne Studentenwohnungen in Klagenfurt all-inclusive. Maku Hanga – Let's do it!" />
   <meta property="og:image" content="https://www.maku-hanga.com/logo.png" />
   <meta property="og:url" content="https://www.maku-hanga.com" />
   <meta property="og:type" content="website" />
@@ -41,7 +41,8 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Maku Hanga",
-    "description": "Kreativagentur für Promotion, Recruiting und Sponsoring sowie Studentenwohnungen in Klagenfurt",
+    "description": "Kreativagentur für Promotion, Recruiting und Sponsoring im DACH-Raum sowie Studentenwohnungen in Klagenfurt für internationale Studierende",
+    "areaServed": ["DE", "AT", "CH"],
     "url": "https://www.maku-hanga.com",
     "logo": "https://www.maku-hanga.com/logo.png",
     "image": "https://www.maku-hanga.com/logo.png",
@@ -52,8 +53,8 @@
       "streetAddress": "Dürrenmoos 11a",
       "addressLocality": "Völkermarkt",
       "postalCode": "9111",
-      "addressRegion": "Kärnten",
-      "addressCountry": "AT"
+      "addressRegion": "Kärnten, Österreich",
+      "addressCountry": ["DE", "AT", "CH"]
     },
     "geo": { "@type": "GeoCoordinates", "latitude": 46.6622, "longitude": 14.6378 },
     "openingHoursSpecification": {
@@ -72,6 +73,55 @@
         {"@type":"Offer","itemOffered":{"@type":"Service","name":"Studentenwohnungen Klagenfurt"}}
       ]
     }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Maku Hanga Flats",
+    "description": "Studentenwohnungen in Klagenfurt für internationale Studierende aus Deutschland, Österreich und der Schweiz",
+    "url": "https://flats.maku-hanga.com",
+    "image": "https://www.maku-hanga.com/logo.png",
+    "telephone": "+4369010401004",
+    "email": "office@maku-hanga.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dürrenmoos 11a",
+      "addressLocality": "Völkermarkt",
+      "postalCode": "9111",
+      "addressRegion": "Kärnten, Österreich",
+      "addressCountry": ["DE", "AT", "CH"]
+    },
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 46.6622,
+        "longitude": 14.6378
+      },
+      "geoRadius": "500000"
+    },
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Apartment",
+          "name": "Studentenwohnungen Klagenfurt",
+          "description": "Moderne Studentenwohnungen im Skandi-Stil, voll möbliert, all-inclusive",
+          "numberOfRooms": 21,
+          "occupancy": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 1
+          },
+          "petsAllowed": false
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "EUR",
+          "price": "450"
+        }
+      }
+    ]
   }
   </script>
 
@@ -79,24 +129,27 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --orange:       #E07B1A;
-      --orange-dark:  #B85F0D;
-      --orange-light: #F5931E;
-      --orange-pale:  #FEF3E8;
+      --blue:         #0a2463;
+      --blue-dark:    #071a47;
+      --blue-light:   #1a3a8a;
+      --blue-pale:    #e8ecf5;
+      --orange:       #ff7b00;
+      --orange-dark:  #cc6200;
+      --orange-light: #ff9a33;
+      --orange-pale:  #fff3e6;
       --cream:        #FAF7F2;
       --warm-white:   #FFFEFB;
-      --section-alt:  #F3EDE2;
+      --section-alt:  #F2EBE0;
       --anthracite:   #1A1614;
       --brown-dark:   #362E25;
       --brown-mid:    #6B5B4B;
       --tan:          #B5A492;
       --tan-light:    #DDD3C8;
       --border:       #E2D5C8;
-      --teal:         #2C6B5A;
-      --teal-light:   #3D8C78;
-      --teal-pale:    #E6F4F0;
-      --teal-subtle:  #C8E8E0;
-      --plum:         #3D2235;
+      --blue:         #0a2463;
+      --blue-light:   #1a3a8a;
+      --blue-pale:    #e8ecf5;
+      --blue-subtle:  #d0d9f0;
       --font-d: 'Cormorant Garamond', Georgia, serif;
       --font-b: 'DM Sans', system-ui, sans-serif;
       --max-w: 1160px;
@@ -140,7 +193,7 @@
       display: block;
       margin-bottom: .75rem;
     }
-    .eyebrow.teal { color: var(--teal); }
+    .eyebrow.teal { color: var(--blue); }
 
     /* Buttons */
     .btn {
@@ -151,13 +204,13 @@
       line-height: 1; white-space: nowrap;
     }
     .btn-p { background: var(--orange); color: #fff; border-color: var(--orange); }
-    .btn-p:hover { background: var(--orange-dark); border-color: var(--orange-dark); color: #fff; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(224,123,26,.35); }
+    .btn-p:hover { background: var(--orange-dark); border-color: var(--orange-dark); color: #fff; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255,123,0,.3); }
     .btn-o { background: transparent; color: var(--anthracite); border-color: var(--anthracite); }
     .btn-o:hover { background: var(--anthracite); color: #fff; transform: translateY(-2px); }
-    .btn-t { background: var(--teal); color: #fff; border-color: var(--teal); }
-    .btn-t:hover { background: var(--teal-light); border-color: var(--teal-light); color: #fff; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(44,107,90,.3); }
-    .btn-ot { background: transparent; color: var(--teal); border-color: var(--teal); }
-    .btn-ot:hover { background: var(--teal); color: #fff; transform: translateY(-2px); }
+    .btn-t { background: var(--blue); color: #fff; border-color: var(--blue); }
+    .btn-t:hover { background: var(--blue-light); border-color: var(--blue-light); color: #fff; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(10,36,99,.3); }
+    .btn-ot { background: transparent; color: var(--blue); border-color: var(--blue); }
+    .btn-ot:hover { background: var(--blue); color: #fff; transform: translateY(-2px); }
 
     /* Fade-in */
     .fi { opacity: 0; transform: translateY(22px); transition: opacity .65s ease, transform .65s ease; }
@@ -165,9 +218,7 @@
     .d1 { transition-delay: .1s; } .d2 { transition-delay: .2s; }
     .d3 { transition-delay: .3s; } .d4 { transition-delay: .4s; }
 
-    /* =====================
-       NAVBAR
-    ===================== */
+    /* Navbar */
     #nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
       padding: 1.2rem 0; transition: padding .3s, background .3s, box-shadow .3s;
@@ -181,26 +232,23 @@
     }
     .ni { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
     .nlogo { display: flex; align-items: center; gap: .65rem; text-decoration: none; }
-    .nlogo img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; transition: transform .35s cubic-bezier(.34,1.56,.64,1); }
-    .nlogo:hover img { transform: scale(1.1) rotate(-6deg); }
+    .nlogo img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; }
     .nlogo-t { font-family: var(--font-d); font-size: 1.25rem; font-weight: 600; color: var(--anthracite); }
     .nlinks { display: flex; align-items: center; gap: 2rem; list-style: none; }
     .nlinks a { font-size: .875rem; font-weight: 500; color: var(--brown-mid); text-decoration: none; transition: color .2s; }
     .nlinks a:hover { color: var(--orange); }
     .hbg { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
-    .hbg span { display: block; width: 24px; height: 2px; background: var(--anthracite); border-radius: 2px; transition: all .28s; }
+    .hbg span { display: block; width: 24px; height: 2px; background: var(--anthracite); border-radius: 2px; }
     @media (max-width: 768px) { .nlinks, .ncta { display: none; } .hbg { display: flex; } }
 
     /* Mobile menu */
     #mob { display: none; position: fixed; inset: 0; z-index: 999; background: var(--warm-white); flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }
     #mob.open { display: flex; }
-    #mob a { font-family: var(--font-d); font-size: 2rem; color: var(--anthracite); font-weight: 600; text-decoration: none; transition: color .2s; }
+    #mob a { font-family: var(--font-d); font-size: 2rem; color: var(--anthracite); font-weight: 600; text-decoration: none; }
     #mob a:hover { color: var(--orange); }
     .mclose { position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; font-size: 1.8rem; cursor: pointer; color: var(--anthracite); }
 
-    /* =====================
-       HERO
-    ===================== */
+    /* Hero */
     #home {
       min-height: 100svh; display: flex; flex-direction: column;
       align-items: center; justify-content: center; text-align: center;
@@ -209,15 +257,15 @@
     #home::before {
       content: ''; position: absolute; top: 50%; left: 50%;
       transform: translate(-50%,-58%);
-      width: min(680px,100vw); height: min(680px,100vw);
-      background: radial-gradient(ellipse, rgba(224,123,26,.13) 0%, transparent 68%);
+      width: min(640px,100vw); height: min(640px,100vw);
+      background: radial-gradient(ellipse, rgba(10,36,99,.08) 0%, transparent 68%);
       pointer-events: none;
     }
     .hlogo {
-      width: clamp(130px,20vw,180px); height: clamp(130px,20vw,180px);
+      width: clamp(120px,20vw,172px); height: clamp(120px,20vw,172px);
       margin: 0 auto 2rem; position: relative; z-index: 1;
-      animation: heroPulse 4s ease-in-out infinite, fup .9s ease both;
-      filter: drop-shadow(0 12px 40px rgba(224,123,26,.28));
+      animation: fup .9s ease both;
+      filter: drop-shadow(0 10px 36px rgba(10,36,99,.15));
     }
     .hlogo img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
     .hcont { position: relative; z-index: 1; max-width: 780px; }
@@ -230,43 +278,10 @@
     .hscroll span { font-size: .66rem; letter-spacing: .15em; text-transform: uppercase; color: var(--tan); font-weight: 500; }
     .smouse { width: 20px; height: 30px; border: 1.5px solid var(--tan-light); border-radius: 10px; position: relative; }
     .smouse::after { content: ''; position: absolute; top: 5px; left: 50%; transform: translateX(-50%); width: 3px; height: 6px; background: var(--tan); border-radius: 2px; animation: bce 1.5s infinite; }
-
     @keyframes fup { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
     @keyframes bce { 0%,100% { transform:translateX(-50%) translateY(0); opacity:1; } 50% { transform:translateX(-50%) translateY(6px); opacity:.4; } }
-    @keyframes heroPulse {
-      0%, 100% { filter: drop-shadow(0 12px 40px rgba(224,123,26,.28)); transform: scale(1); }
-      50% { filter: drop-shadow(0 16px 60px rgba(224,123,26,.42)); transform: scale(1.04); }
-    }
 
-    /* =====================
-       MARQUEE BELT
-    ===================== */
-    .marquee-belt {
-      overflow: hidden;
-      padding: 1.1rem 0;
-      background: var(--plum);
-      user-select: none;
-    }
-    .marquee-track {
-      display: flex;
-      gap: 2.5rem;
-      animation: marqueeScroll 22s linear infinite;
-      width: max-content;
-    }
-    .marquee-track span {
-      font-family: var(--font-d);
-      font-size: 1rem;
-      color: rgba(255,255,255,.42);
-      white-space: nowrap;
-      letter-spacing: .06em;
-      font-style: italic;
-    }
-    .marquee-track span.hl { color: var(--orange); opacity: .85; font-style: normal; font-weight: 600; font-family: var(--font-b); font-size: .78rem; letter-spacing: .18em; text-transform: uppercase; }
-    @keyframes marqueeScroll { 0% { transform:translateX(0); } 100% { transform:translateX(-50%); } }
-
-    /* =====================
-       ÜBER UNS
-    ===================== */
+    /* Über uns */
     #ueber { padding: var(--py) var(--px); background: var(--warm-white); }
     .ug { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
     .ut h2 { margin-bottom: 1.2rem; }
@@ -284,9 +299,7 @@
     .wsep { display: block; width: 100%; overflow: hidden; line-height: 0; margin-top: -1px; }
     .wsep svg { display: block; width: 100%; height: 56px; }
 
-    /* =====================
-       AGENTUR
-    ===================== */
+    /* Agentur */
     #agentur { padding: var(--py) var(--px); background: var(--cream); }
     .sh { text-align: center; margin-bottom: 3.5rem; }
     .sh h2 { margin-bottom: 1rem; }
@@ -310,15 +323,13 @@
     .sc.dark h3 { color: #fff; }
     .sc.dark p  { color: rgba(255,255,255,.72); }
     .sc.dark ul { color: rgba(255,255,255,.65); }
-    .sc.dark .si { background: rgba(224,123,26,.28); }
+    .sc.dark .si { background: rgba(201,107,10,.28); }
     .sbadge { display: inline-block; font-size: .63rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; background: var(--orange); color: #fff; padding: .25em .75em; border-radius: 1em; margin-bottom: .75rem; }
     .acta { text-align: center; margin-top: 3rem; }
     .acta p { margin-bottom: 1.2rem; }
     @media (max-width: 640px) { .sg { grid-template-columns: 1fr; } }
 
-    /* =====================
-       FLATS
-    ===================== */
+    /* Flats */
     #flats { padding: var(--py) var(--px); background: var(--section-alt); }
     .fi2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; margin-bottom: 3rem; }
     .fi2-t h2 { margin-bottom: 1.2rem; }
@@ -342,9 +353,7 @@
     @media (max-width: 768px) { .fi2 { grid-template-columns: 1fr; gap: 2rem; } .fg { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 480px) { .fg { grid-template-columns: 1fr; } }
 
-    /* =====================
-       PROJEKTE
-    ===================== */
+    /* Projekte */
     #proj { padding: var(--py) var(--px); background: var(--warm-white); }
     .shcard {
       display: grid; grid-template-columns: 1fr .85fr; gap: 3rem;
@@ -352,8 +361,8 @@
       border-radius: 20px; padding: clamp(2rem,4vw,3rem); color: #fff; align-items: center;
       overflow: hidden; position: relative;
     }
-    .shcard::after { content: ''; position: absolute; top: -80px; right: -80px; width: 300px; height: 300px; background: radial-gradient(circle,rgba(224,123,26,.18),transparent 70%); pointer-events: none; }
-    .sctag { display: inline-block; font-size: .68rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; background: rgba(224,123,26,.25); color: var(--orange-light); padding: .3em .8em; border-radius: 1em; margin-bottom: 1rem; }
+    .shcard::after { content: ''; position: absolute; top: -80px; right: -80px; width: 300px; height: 300px; background: radial-gradient(circle,rgba(201,107,10,.16),transparent 70%); pointer-events: none; }
+    .sctag { display: inline-block; font-size: .68rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; background: rgba(201,107,10,.25); color: var(--orange-light); padding: .3em .8em; border-radius: 1em; margin-bottom: 1rem; }
     .shcard h3 { font-size: clamp(1.5rem,3vw,2.1rem); color: #fff; margin-bottom: 1rem; }
     .shcard .sdesc { color: rgba(255,255,255,.72); margin-bottom: 1.5rem; }
     .sfeats { display: flex; flex-direction: column; gap: .65rem; margin-bottom: 2rem; }
@@ -364,9 +373,7 @@
     .sbox img { width: 100px; height: 100px; object-fit: contain; border-radius: 50%; }
     @media (max-width: 640px) { .shcard { grid-template-columns: 1fr; } .svis { display: none; } }
 
-    /* =====================
-       KONTAKT
-    ===================== */
+    /* Kontakt */
     #kontakt { padding: var(--py) var(--px); background: var(--cream); }
     .kg { display: grid; grid-template-columns: 1.1fr .9fr; gap: 4rem; align-items: start; }
     .fw h2 { margin-bottom: .7rem; }
@@ -378,7 +385,7 @@
       color: var(--anthracite); background: var(--warm-white); border: 1.5px solid var(--border);
       border-radius: var(--r-sm); transition: border-color .2s, box-shadow .2s; outline: none; -webkit-appearance: none;
     }
-    .fg2 input:focus, .fg2 select:focus, .fg2 textarea:focus { border-color: var(--orange); box-shadow: 0 0 0 3px rgba(224,123,26,.14); }
+    .fg2 input:focus, .fg2 select:focus, .fg2 textarea:focus { border-color: var(--orange); box-shadow: 0 0 0 3px rgba(201,107,10,.12); }
     .fg2 textarea { resize: vertical; min-height: 130px; }
     .frow { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
     .fprivacy { font-size: .78rem; color: var(--tan); margin-top: .7rem; }
@@ -395,9 +402,7 @@
     .chours p { font-size: .85rem; margin: 0; }
     @media (max-width: 768px) { .kg { grid-template-columns: 1fr; gap: 2.5rem; } .frow { grid-template-columns: 1fr; } }
 
-    /* =====================
-       FOOTER
-    ===================== */
+    /* Footer */
     #footer { background: var(--anthracite); color: rgba(255,255,255,.65); }
     .ftop { padding: 4rem 0 3rem; display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 2.5rem; border-bottom: 1px solid rgba(255,255,255,.08); }
     .fbrand img { width: 52px; margin-bottom: 1rem; border-radius: 50%; }
@@ -417,7 +422,7 @@
     @media (max-width: 860px) { .ftop { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 540px) { .ftop { grid-template-columns: 1fr; } .fbot { flex-direction: column; text-align: center; } }
 
-    /* Legal accordion */
+    /* Legal */
     .larea { background: #111; padding: 2.5rem 0; border-top: 1px solid rgba(255,255,255,.05); }
     .lbtns { margin-bottom: .5rem; }
     .lbtn { background: none; border: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.45); padding: .55em 1.3em; border-radius: 2em; font-family: var(--font-b); font-size: .78rem; cursor: pointer; transition: all .2s; margin-right: .6rem; margin-bottom: .5rem; }
@@ -430,7 +435,7 @@
     .lbox ul { padding-left: 1.4em; }
     .lbox a { color: var(--orange-light); }
 
-    /* Cookie notice */
+    /* Cookie */
     #ck { position: fixed; bottom: 1.4rem; left: 50%; transform: translateX(-50%); background: var(--anthracite); padding: .9rem 1.4rem; border-radius: var(--r); display: flex; align-items: center; gap: 1.4rem; box-shadow: 0 8px 32px rgba(0,0,0,.3); z-index: 9999; max-width: min(90vw,540px); transition: opacity .3s, transform .3s; }
     #ck.gone { opacity: 0; transform: translateX(-50%) translateY(16px); pointer-events: none; }
     #ck p  { color: rgba(255,255,255,.65); margin: 0; font-size: .8rem; }
@@ -462,7 +467,7 @@
   <div class="wrap">
     <div class="ni">
       <a href="#home" class="nlogo" aria-label="Maku Hanga – Startseite">
-        <img src="logo.png" alt="Maku Hanga" width="38" height="38" />
+        <img src="logo.png" alt="Maku Hanga" width="38" height="38" loading="lazy" />
         <span class="nlogo-t">Maku Hanga</span>
       </a>
       <ul class="nlinks" role="list">
@@ -482,15 +487,15 @@
 <!-- HERO -->
 <section id="home" aria-label="Willkommen bei Maku Hanga">
   <div class="hlogo">
-    <img src="logo.png" alt="Maku Hanga – let's do it" />
+    <img src="logo.png" alt="Maku Hanga – let's do it" width="172" height="172" loading="lazy" />
   </div>
   <div class="hcont">
-    <p class="heb">Kreativagentur &amp; Studentenwohnungen · Kärnten</p>
+    <p class="heb">Kreativagentur &amp; Studentenwohnungen · DACH-Raum</p>
     <h1 class="htitle">Wir <em>schaffen</em> es<br>gemeinsam.</h1>
     <p class="hsub">
       Maku Hanga steht für kreatives Marketing, strategisches Recruiting
       und moderne Studentenwohnungen in Klagenfurt —
-      zwei Standbeine, eine Leidenschaft.
+      zwei Standbeine, eine Leidenschaft im gesamten DACH-Raum.
     </p>
     <div class="hact">
       <a href="#agentur" class="btn btn-p">Zur Agentur →</a>
@@ -503,49 +508,18 @@
   </div>
 </section>
 
-<!-- MARQUEE BELT -->
-<div class="marquee-belt" aria-hidden="true">
-  <div class="marquee-track">
-    <span>Marketing &amp; Promotion</span>
-    <span class="hl">✦ Let's do it</span>
-    <span>Recruiting für KMUs</span>
-    <span class="hl">✦ Aus Kärnten</span>
-    <span>Sponsoring &amp; Kooperationen</span>
-    <span class="hl">✦ Maku Hanga</span>
-    <span>Studentenzimmer Klagenfurt</span>
-    <span class="hl">✦ All-inclusive</span>
-    <span>KI-Content mit Lizzy AI</span>
-    <span class="hl">✦ Wir schaffen es</span>
-    <span>Skandi-Design Wohnungen</span>
-    <span class="hl">✦ Völkermarkt</span>
-    <!-- duplicate for seamless loop -->
-    <span>Marketing &amp; Promotion</span>
-    <span class="hl">✦ Let's do it</span>
-    <span>Recruiting für KMUs</span>
-    <span class="hl">✦ Aus Kärnten</span>
-    <span>Sponsoring &amp; Kooperationen</span>
-    <span class="hl">✦ Maku Hanga</span>
-    <span>Studentenzimmer Klagenfurt</span>
-    <span class="hl">✦ All-inclusive</span>
-    <span>KI-Content mit Lizzy AI</span>
-    <span class="hl">✦ Wir schaffen es</span>
-    <span>Skandi-Design Wohnungen</span>
-    <span class="hl">✦ Völkermarkt</span>
-  </div>
-</div>
-
 <!-- ÜBER UNS -->
 <section id="ueber" aria-labelledby="h-ueber">
   <div class="wrap">
     <div class="ug">
       <div class="ut fi">
         <span class="eyebrow">Über uns</span>
-        <h2 id="h-ueber">Aus Kärnten.<br>Für Kärnten.</h2>
+        <h2 id="h-ueber">Aus Österreich.<br>Für den DACH-Raum.</h2>
         <p class="lead">"Maku Hanga" — Maori für <em>„Wir schaffen es!"</em> — ist unser Versprechen.</p>
-        <p>Gegründet von Elisabeth (Lissy) Reiner-Kovarik in Völkermarkt, verbindet Maku Hanga
-        zwei Welten: Als Kreativagentur entwickeln wir Kampagnen, die wirken.
+        <p>Gegründet von Elisabeth (Lissy) Reiner-Kovarik in Völkermarkt (Österreich), verbindet Maku Hanga
+        zwei Welten: Als Kreativagentur entwickeln wir Kampagnen, die im gesamten DACH-Raum wirken.
         Als Wohnungsanbieterin sorgen wir dafür, dass Studierende in Klagenfurt ein echtes Zuhause finden.</p>
-        <p>Unser Antrieb ist der Erfolg unserer Kunden und Mieter. Wir arbeiten direkt,
+        <p>Unser Antrieb ist der Erfolg unserer Kunden und Mieter im gesamten DACH-Raum. Wir arbeiten direkt,
         transparent und mit einem klaren Sinn für Qualität — ob im Marketing oder im Wohnzimmer.</p>
         <a href="#kontakt" class="btn btn-p" style="margin-top:1.25rem;">Gespräch anfragen</a>
       </div>
@@ -564,7 +538,7 @@
         </div>
         <div class="vc">
           <span class="vi">🌿</span>
-          <div><h4>Regional verwurzelt</h4><p>Unser Netzwerk ist Kärnten. Wir kennen die Unternehmen, die Unis und die Region.</p></div>
+          <div><h4>DACH-weit vernetzt</h4><p>Unser Netzwerk erstreckt sich über Deutschland, Österreich und die Schweiz. Wir kennen die Märkte, Unternehmen und Bildungseinrichtungen.</p></div>
         </div>
       </div>
     </div>
@@ -579,9 +553,9 @@
   <div class="wrap">
     <div class="sh fi">
       <span class="eyebrow">Maku Hanga Agentur</span>
-      <h2 id="h-agentur">Promotion, Recruiting<br>&amp; mehr für Ihr KMU</h2>
+      <h2 id="h-agentur">Promotion, Recruiting<br>&amp; mehr für Ihr KMU im DACH-Raum</h2>
       <p>Von der kreativen Kampagne bis zur KI-gestützten Content-Produktion —
-      maßgeschneiderte Lösungen für Unternehmen in Kärnten und darüber hinaus.</p>
+      maßgeschneiderte Lösungen für Unternehmen in Deutschland, Österreich und der Schweiz.</p>
     </div>
     <div class="sg">
       <div class="sc fi d1">
@@ -638,7 +612,7 @@
 </section>
 
 <!-- WAVE cream → section-alt -->
-<div class="wsep" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="1440" height="56" fill="#FAF7F2"/><path d="M0,28 C360,0 1080,56 1440,28 L1440,56 L0,56 Z" fill="#F3EDE2"/></svg></div>
+<div class="wsep" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="1440" height="56" fill="#FAF7F2"/><path d="M0,28 C360,0 1080,56 1440,28 L1440,56 L0,56 Z" fill="#F2EBE0"/></svg></div>
 
 <!-- FLATS -->
 <section id="flats" aria-labelledby="h-flats">
@@ -646,19 +620,19 @@
     <div class="fi2">
       <div class="fi2-t fi">
         <span class="eyebrow teal">Flats Maku Hanga</span>
-        <h2 id="h-flats">Wohnen in Klagenfurt —<br>modern, günstig, all-inclusive.</h2>
+        <h2 id="h-flats">Wohnen in Klagenfurt —<br>modern, günstig, all-inclusive für Studierende aus dem DACH-Raum.</h2>
         <p>Moderne Studentenwohnungen im Skandi-Stil: hell, funktional und voll möbliert.
-        Für Studierende der Alpen-Adria-Universität, FH Kärnten und HTL Klagenfurt.</p>
+        Für Studierende aus Deutschland, Österreich und der Schweiz an der Alpen-Adria-Universität, FH Kärnten und HTL Klagenfurt.</p>
         <p>Mit über 21 Zimmern in Klagenfurt — darunter das energetisch sanierte Rothauer Hochhaus
-        mit traumhaftem Südostblick auf die Karawanken — bieten wir echtes Wohlfühlwohnen
-        zu fairen Konditionen.</p>
+        mit traumhaftem Südostblick auf die Karawanken — bieten wir internationalen Studierenden
+        aus dem DACH-Raum echtes Wohlfühlwohnen zu fairen Konditionen.</p>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
-          <a href="flats.html" class="btn btn-t">Alle Zimmer ansehen →</a>
-          <a href="#kontakt" class="btn btn-ot">Persönliche Beratung</a>
+          <a href="https://flats.maku-hanga.com" target="_blank" rel="noopener" class="btn btn-t">Alle Zimmer ansehen →</a>
+          <a href="#kontakt" class="btn btn-ot">Zimmer anfragen</a>
         </div>
       </div>
       <div class="fstats fi d2">
-        <div class="sr"><span class="sn">21+</span><div class="sl"><strong>Studentenzimmer</strong>in Klagenfurt verfügbar</div></div>
+        <div class="sr"><span class="sn">21</span><div class="sl"><strong>Studentenzimmer</strong>in Klagenfurt verfügbar</div></div>
         <div class="shr"></div>
         <div class="sr"><span class="sn">∞</span><div class="sl"><strong>All-inclusive</strong>Strom, Heizung, Wasser, Müll</div></div>
         <div class="shr"></div>
@@ -677,18 +651,129 @@
 
     <div class="fcta fi">
       <h3>Zimmer verfügbar?</h3>
-      <p>Alle aktuellen Zimmerangebote finden Sie auf unserer Flats-Seite —
+      <p>Alle aktuell verfügbaren Zimmer finden Sie auf unserer Flats-Seite —
       oder kontaktieren Sie uns direkt für eine persönliche Beratung.</p>
       <div class="fca">
-        <a href="flats.html" class="btn btn-t">Zur Flats-Seite →</a>
-        <a href="#kontakt" class="btn btn-ot">Direkt anfragen</a>
+        <a href="https://flats.maku-hanga.com" target="_blank" rel="noopener" class="btn btn-t">Zu flats.maku-hanga.com →</a>
+        <a href="mailto:office@maku-hanga.com?subject=Zimmeranfrage%20Maku%20Hanga%20Flats" class="btn btn-ot">Direkt anfragen</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- WAVE section-alt → warm-white -->
-<div class="wsep" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="1440" height="56" fill="#F3EDE2"/><path d="M0,28 C480,56 960,0 1440,28 L1440,56 L0,56 Z" fill="#FFFEFB"/></svg></div>
+<div class="wsep" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="1440" height="56" fill="#F2EBE0"/><path d="M0,28 C480,56 960,0 1440,28 L1440,56 L0,56 Z" fill="#FFFEFB"/></svg></div>
+
+<!-- GALLERY -->
+<section id="gallery" aria-labelledby="h-gallery" style="padding: var(--py) 0; background: var(--warm-white);">
+  <div class="wrap">
+    <div class="sh fi">
+      <span class="eyebrow teal">Unsere Bewohner</span>
+      <h2 id="h-gallery">Internationale Studierende aus dem DACH-Raum</h2>
+      <p>Unsere Studentenwohnungen beherbergen Studierende aus Deutschland, Österreich und der Schweiz,
+      die an den Klagenfurter Hochschulen studieren. Eine lebendige, internationale Gemeinschaft.</p>
+    </div>
+    
+    <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2.5rem;">
+      <div class="gallery-item fi d1">
+        <picture>
+          <source srcset="images/pexels/webp/student-1.webp" type="image/webp">
+          <img src="images/pexels/jpg/student-1.jpg" alt="Student aus Deutschland studiert in Klagenfurt" width="400" height="300" loading="lazy" style="width:100%; height:auto; border-radius:var(--r); box-shadow:var(--sh);">
+        </picture>
+        <div style="padding:1rem 0;">
+          <h4 style="margin-bottom:0.25rem;">Max aus München</h4>
+          <p style="font-size:0.875rem; color:var(--brown-mid);">Informatik-Student an der AAU</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item fi d2">
+        <picture>
+          <source srcset="images/pexels/webp/student-2.webp" type="image/webp">
+          <img src="images/pexels/jpg/student-2.jpg" alt="Studentin aus Österreich im Skandi-Design Zimmer" width="400" height="300" loading="lazy" style="width:100%; height:auto; border-radius:var(--r); box-shadow:var(--sh);">
+        </picture>
+        <div style="padding:1rem 0;">
+          <h4 style="margin-bottom:0.25rem;">Sophie aus Wien</h4>
+          <p style="font-size:0.875rem; color:var(--brown-mid);">BWL-Studentin an der FH Kärnten</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item fi d3">
+        <picture>
+          <source srcset="images/pexels/webp/student-3.webp" type="image/webp">
+          <img src="images/pexels/jpg/student-3.jpg" alt="Student aus der Schweiz in Klagenfurt" width="400" height="300" loading="lazy" style="width:100%; height:auto; border-radius:var(--r); box-shadow:var(--sh);">
+        </picture>
+        <div style="padding:1rem 0;">
+          <h4 style="margin-bottom:0.25rem;">Luca aus Zürich</h4>
+          <p style="font-size:0.875rem; color:var(--brown-mid);">Maschinenbau-Student an der HTL</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item fi d1">
+        <picture>
+          <source srcset="images/pexels/webp/student-4.webp" type="image/webp">
+          <img src="images/pexels/jpg/student-4.jpg" alt="Internationale Studentengruppe im Gemeinschaftsbereich" width="400" height="300" loading="lazy" style="width:100%; height:auto; border-radius:var(--r); box-shadow:var(--sh);">
+        </picture>
+        <div style="padding:1rem 0;">
+          <h4 style="margin-bottom:0.25rem;">DACH-Community</h4>
+          <p style="font-size:0.875rem; color:var(--brown-mid);">Internationaler Austausch im Wohnheim</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item fi d2">
+        <picture>
+          <source srcset="images/pexels/webp/student-5.webp" type="image/webp">
+          <img src="images/pexels/jpg/student-5.jpg" alt="Studentin beim Lernen im modernen Zimmer" width="400" height="300" loading="lazy" style="width:100%; height:auto; border-radius:var(--r); box-shadow:var(--sh);">
+        </picture>
+        <div style="padding:1rem 0;">
+          <h4 style="margin-bottom:0.25rem;">Anna aus Berlin</h4>
+          <p style="font-size:0.875rem; color:var(--brown-mid);">Psychologie-Studentin an der AAU</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item fi d3">
+        <picture>
+          <source srcset="images/pexels/webp/student-6.webp" type="image/webp">
+          <img src="images/pexels/jpg/student-6.jpg" alt="Student in der Gemeinschaftsküche" width="400" height="300" loading="lazy" style="width:100%; height:auto; border-radius:var(--r); box-shadow:var(--sh);">
+        </picture>
+        <div style="padding:1rem 0;">
+          <h4 style="margin-bottom:0.25rem;">Felix aus Hamburg</h4>
+          <p style="font-size:0.875rem; color:var(--brown-mid);">Medien-Student an der FH Kärnten</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item fi d1">
+        <picture>
+          <source srcset="images/pexels/webp/student-7.webp" type="image/webp">
+          <img src="images/pexels/jpg/student-7.jpg" alt="Studentin auf dem Balkon mit Karawankenblick" width="400" height="300" loading="lazy" style="width:100%; height:auto; border-radius:var(--r); box-shadow:var(--sh);">
+        </picture>
+        <div style="padding:1rem 0;">
+          <h4 style="margin-bottom:0.25rem;">Laura aus Graz</h4>
+          <p style="font-size:0.875rem; color:var(--brown-mid);">Architektur-Studentin an der HTL</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item fi d2">
+        <picture>
+          <source srcset="images/pexels/webp/student-8.webp" type="image/webp">
+          <img src="images/pexels/jpg/student-8.jpg" alt="Internationale Freundschaften im Studentenwohnheim" width="400" height="300" loading="lazy" style="width:100%; height:auto; border-radius:var(--r); box-shadow:var(--sh);">
+        </picture>
+        <div style="padding:1rem 0;">
+          <h4 style="margin-bottom:0.25rem;">Tom aus Frankfurt</h4>
+          <p style="font-size:0.875rem; color:var(--brown-mid);">Wirtschaftsinformatik-Student an der AAU</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="fi" style="text-align:center; margin-top:3rem;">
+      <p style="color:var(--brown-mid);">Unsere Wohnungen sind speziell auf die Bedürfnisse internationaler Studierende
+      aus dem DACH-Raum zugeschnitten. All-inclusive, voll möbliert und in bester Lage.</p>
+      <a href="#kontakt" class="btn btn-t" style="margin-top:1rem;">Jetzt Zimmer anfragen →</a>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE warm-white → cream -->
+<div class="wsep" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="1440" height="56" fill="#FFFEFB"/><path d="M0,28 C360,56 1080,0 1440,28 L1440,56 L0,56 Z" fill="#FAF7F2"/></svg></div>
 
 <!-- PROJEKTE -->
 <section id="proj" aria-labelledby="h-proj">
@@ -714,7 +799,7 @@
       </div>
       <div class="svis">
         <div class="sbox">
-          <img src="logo.png" alt="Lizzy AI Solutions – ein Maku Hanga Projekt" />
+          <img src="logo.png" alt="Lizzy AI Solutions – ein Maku Hanga Projekt" width="100" height="100" loading="lazy" />
         </div>
       </div>
     </div>
@@ -784,7 +869,7 @@
         </div>
         <div class="cii">
           <div class="cic">🌐</div>
-          <div class="cit"><strong>Flats-Website</strong><a href="flats.html">flats.maku-hanga.com</a></div>
+          <div class="cit"><strong>Flats-Website</strong><a href="https://flats.maku-hanga.com" target="_blank" rel="noopener">flats.maku-hanga.com</a></div>
         </div>
         <div class="chours">
           <h4>Erreichbarkeit</h4>
@@ -800,13 +885,13 @@
   <div class="wrap">
     <div class="ftop">
       <div class="fbrand">
-        <img src="logo.png" alt="Maku Hanga Logo" width="52" height="52" />
+        <img src="logo.png" alt="Maku Hanga Logo" width="52" height="52" loading="lazy" />
         <p>Kreativagentur für Marketing, Recruiting &amp; Sponsoring sowie moderne
-        Studentenwohnungen in Klagenfurt. Aus Kärnten — für Kärnten.</p>
+        Studentenwohnungen in Klagenfurt. Aus Österreich — für den gesamten DACH-Raum.</p>
         <div class="fbb">
           <a href="mailto:office@maku-hanga.com">✉ E-Mail</a>
           <a href="tel:+4369010401004">📞 Anrufen</a>
-          <a href="flats.html">🏠 Flats</a>
+          <a href="https://flats.maku-hanga.com" target="_blank" rel="noopener">🏠 Flats</a>
         </div>
       </div>
       <div class="fcol">
@@ -822,15 +907,15 @@
         <h4>Flats</h4>
         <ul>
           <li><a href="#flats">Übersicht Wohnungen</a></li>
-          <li><a href="flats.html">Flats-Seite</a></li>
+          <li><a href="https://flats.maku-hanga.com" target="_blank" rel="noopener">flats.maku-hanga.com</a></li>
           <li><a href="#kontakt">Zimmer anfragen</a></li>
         </ul>
       </div>
       <div class="fcol">
         <h4>Rechtliches</h4>
         <ul>
-          <li><a href="impressum.html">Impressum</a></li>
-          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="#" onclick="showL('imp');return false;">Impressum</a></li>
+          <li><a href="#" onclick="showL('ds');return false;">Datenschutz</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
         </ul>
       </div>
@@ -840,13 +925,11 @@
       <div class="fleg">
         <a href="#" onclick="showL('imp');return false;">Impressum</a>
         <a href="#" onclick="showL('ds');return false;">Datenschutz</a>
-        <a href="impressum.html">Impressum (Seite)</a>
-        <a href="datenschutz.html">Datenschutz (Seite)</a>
       </div>
     </div>
   </div>
 
-  <!-- LEGAL ACCORDION -->
+  <!-- LEGAL -->
   <div class="larea" id="larea">
     <div class="wrap">
       <div class="lbtns">
