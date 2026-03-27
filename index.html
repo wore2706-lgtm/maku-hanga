@@ -262,12 +262,16 @@
       pointer-events: none;
     }
     .hlogo {
-      width: clamp(120px,20vw,172px); height: clamp(120px,20vw,172px);
+      width: clamp(140px,25vw,200px); height: clamp(140px,25vw,200px);
       margin: 0 auto 2rem; position: relative; z-index: 1;
       animation: fup .9s ease both;
       filter: drop-shadow(0 10px 36px rgba(10,36,99,.15));
+      border-radius: 20px;
+      overflow: hidden;
+      border: 4px solid white;
+      box-shadow: 0 15px 40px rgba(10,36,99,.2);
     }
-    .hlogo img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
+    .hlogo img { width: 100%; height: 100%; object-fit: cover; }
     .hcont { position: relative; z-index: 1; max-width: 780px; }
     .heb { font-size: .72rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--orange); margin-bottom: 1.2rem; animation: fup .9s .1s ease both; }
     .htitle { font-size: clamp(2.9rem,7vw,5.4rem); font-weight: 700; color: var(--anthracite); line-height: 1.07; margin-bottom: 1.4rem; animation: fup .9s .2s ease both; }
@@ -487,7 +491,7 @@
 <!-- HERO -->
 <section id="home" aria-label="Willkommen bei Maku Hanga">
   <div class="hlogo">
-    <img src="logo.png" alt="Maku Hanga – let's do it" width="172" height="172" loading="lazy" />
+    <img src="img/avatars/lizzy_avatar.jpg" alt="Lizzy AI – unser KI-Avatar für Social Media" width="200" height="200" loading="eager" />
   </div>
   <div class="hcont">
     <p class="heb">Kreativagentur &amp; Studentenwohnungen · DACH-Raum</p>
@@ -699,7 +703,7 @@
 <div class="wsep" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="1440" height="56" fill="#F2EBE0"/><path d="M0,28 C480,56 960,0 1440,28 L1440,56 L0,56 Z" fill="#FFFEFB"/></svg></div>
 
         <div class="sbox">
-          <img src="logo.png" alt="Lizzy AI Solutions – ein Maku Hanga Projekt" width="100" height="100" loading="lazy" />
+          <img src="img/avatars/robert_avatar.jpg" alt="Robert – unser zweiter KI-Avatar für Business-Content" width="100" height="100" loading="lazy" />
         </div>
       </div>
     </div>
@@ -708,6 +712,64 @@
 
 <!-- WAVE warm-white → cream -->
 <div class="wsep" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="1440" height="56" fill="#FFFEFB"/><path d="M0,28 C360,56 1080,0 1440,28 L1440,56 L0,56 Z" fill="#FAF7F2"/></svg></div>
+
+<!-- SOCIAL MEDIA AVATARE -->
+<section id="avatare" aria-labelledby="h-avatare" style="padding: var(--py) var(--px); background: var(--cream);">
+  <div class="wrap">
+    <div class="sh fi">
+      <span class="eyebrow">Social Media</span>
+      <h2 id="h-avatare">Unsere KI-Avatare im Einsatz</h2>
+      <p>Lizzy &amp; Robert – unsere KI-generierten Influencer für authentischen Content auf YouTube, Instagram &amp; Twitter.</p>
+    </div>
+    
+    <div class="avatar-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 3rem 0;">
+      <div class="avatar-card" style="background: white; border-radius: var(--r); padding: 2rem; box-shadow: var(--sh); border: 1px solid var(--border); text-align: center;">
+        <img src="img/avatars/lizzy_avatar.jpg" alt="Lizzy – KI-Avatar für Tech & Business" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem; border: 4px solid white; box-shadow: 0 8px 24px rgba(10,36,99,.15);" />
+        <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--anthracite);">Lizzy</h3>
+        <p style="font-size: 0.9rem; color: var(--brown-mid); margin-bottom: 1rem;">28 Jahre, ex-FAANG Engineer → Tech Consultant<br>Für Tech-Tutorials &amp; Business-Insights</p>
+        <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
+          <span style="font-size: 0.75rem; background: var(--blue-pale); color: var(--blue); padding: 0.3rem 0.8rem; border-radius: 1rem;">YouTube</span>
+          <span style="font-size: 0.75rem; background: var(--orange-pale); color: var(--orange); padding: 0.3rem 0.8rem; border-radius: 1rem;">Instagram</span>
+          <span style="font-size: 0.75rem; background: #e8f5fd; color: #1da1f2; padding: 0.3rem 0.8rem; border-radius: 1rem;">Twitter</span>
+        </div>
+      </div>
+      
+      <div class="avatar-card" style="background: white; border-radius: var(--r); padding: 2rem; box-shadow: var(--sh); border: 1px solid var(--border); text-align: center;">
+        <img src="img/avatars/robert_avatar.jpg" alt="Robert – KI-Avatar für Affiliate & Reviews" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem; border: 4px solid white; box-shadow: 0 8px 24px rgba(10,36,99,.15);" />
+        <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--anthracite);">Robert</h3>
+        <p style="font-size: 0.9rem; color: var(--brown-mid); margin-bottom: 1rem;">62 Jahre, erfahrener Business-Coach<br>Für Affiliate-Reviews &amp; Produktempfehlungen</p>
+        <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
+          <span style="font-size: 0.75rem; background: var(--blue-pale); color: var(--blue); padding: 0.3rem 0.8rem; border-radius: 1rem;">YouTube</span>
+          <span style="font-size: 0.75rem; background: #e8f5fd; color: #1da1f2; padding: 0.3rem 0.8rem; border-radius: 1rem;">Twitter</span>
+          <span style="font-size: 0.75rem; background: #f0f8ff; color: #0077b5; padding: 0.3rem 0.8rem; border-radius: 1rem;">LinkedIn</span>
+        </div>
+      </div>
+      
+      <div class="avatar-card" style="background: white; border-radius: var(--r); padding: 2rem; box-shadow: var(--sh); border: 1px solid var(--border); text-align: center;">
+        <img src="img/showcase/social_media_banner.png" alt="Social Media Banner – Lizzy AI Solutions" style="width: 120px; height: 120px; border-radius: 20px; object-fit: cover; margin: 0 auto 1.5rem; border: 4px solid white; box-shadow: 0 8px 24px rgba(10,36,99,.15);" />
+        <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--anthracite);">Branding</h3>
+        <p style="font-size: 0.9rem; color: var(--brown-mid); margin-bottom: 1rem;">Professionelle Social Media Präsenz<br>Konsistentes Design über alle Plattformen</p>
+        <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
+          <span style="font-size: 0.75rem; background: var(--blue-pale); color: var(--blue); padding: 0.3rem 0.8rem; border-radius: 1rem;">Branding</span>
+          <span style="font-size: 0.75rem; background: var(--orange-pale); color: var(--orange); padding: 0.3rem 0.8rem; border-radius: 1rem;">Design</span>
+          <span style="font-size: 0.75rem; background: #f0f8ff; color: #0077b5; padding: 0.3rem 0.8rem; border-radius: 1rem;">Marketing</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="acta fi" style="text-align: center; margin-top: 3rem;">
+      <p style="margin-bottom: 1.2rem;">Folge unseren KI-Avataren für tägliche Insights &amp; Tipps:</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="https://youtube.com/@LizzyAISolutions" target="_blank" rel="noopener" class="btn btn-t">YouTube →</a>
+        <a href="https://instagram.com/lizzyaisolutions" target="_blank" rel="noopener" class="btn btn-ot">Instagram</a>
+        <a href="https://twitter.com/LizzyAISolutions" target="_blank" rel="noopener" class="btn btn-ot">Twitter</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE cream → cream (kein Wechsel, nur Trennung) -->
+<div class="wsep" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="1440" height="56" fill="#FAF7F2"/><path d="M0,28 C480,56 960,0 1440,28 L1440,56 L0,56 Z" fill="#FAF7F2"/></svg></div>
 
 <!-- KONTAKT -->
 <section id="kontakt" aria-labelledby="h-kontakt">
