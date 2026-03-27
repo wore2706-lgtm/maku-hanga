@@ -5,26 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <title>Maku Hanga Flats – Studentenwohnungen Klagenfurt | All-inclusive, modern, bezugsfertig</title>
-  <meta name="description" content="Maku Hanga Flats – Studentenwohnungen in Klagenfurt für internationale Studierende aus dem DACH-Raum. All-inclusive, voll möbliert, Skandi-Design, sofort bezugsfertig. Faire Mieten, schnelles Internet, Gemeinschaftsräume." />
-  <meta name="keywords" content="Studentenwohnungen Klagenfurt, WG Klagenfurt, Studentenzimmer Österreich, Wohnung Klagenfurt, Mietwohnung Student, WG-Zimmer Klagenfurt, Studentenapartment Kärnten, Wohnheim Klagenfurt" />
+  <title>Maku Hanga Flats – Studentenwohnungen Klagenfurt | All-inclusive</title>
+  <meta name="description" content="Moderne Studentenwohnungen in Klagenfurt im Skandi-Stil. All-inclusive Warmmiete, voll möbliert, direkt einziehbar. Für Studierende der AAU, FH Kärnten & HTL." />
+  <meta name="keywords" content="Studentenwohnungen Klagenfurt, WG Klagenfurt, Zimmer mieten Klagenfurt, Studentenzimmer, All-inclusive Miete, Skandi-Design, Rothauer Hochhaus" />
   <meta name="author" content="Maku Hanga – Elisabeth Reiner-Kovarik" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.maku-hanga.com/flats.html" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Maku Hanga Flats – Studentenwohnungen Klagenfurt" />
-  <meta property="og:description" content="All-inclusive Studentenwohnungen in Klagenfurt für internationale Studierende. Voll möbliert, Skandi-Design, faire Mieten." />
+  <meta property="og:description" content="Moderne Studentenwohnungen im Skandi-Stil. All-inclusive Warmmiete, voll möbliert, direkt einziehbar." />
   <meta property="og:image" content="https://www.maku-hanga.com/logo.png" />
   <meta property="og:url" content="https://www.maku-hanga.com/flats.html" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="de_AT" />
-  <meta property="og:site_name" content="Maku Hanga Flats" />
+  <meta property="og:site_name" content="Maku Hanga" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Maku Hanga Flats – Studentenwohnungen Klagenfurt" />
-  <meta name="twitter:description" content="All-inclusive WG-Zimmer für Studierende. Voll möbliert, Skandi-Design, Klagenfurt." />
+  <meta name="twitter:description" content="Moderne Studentenwohnungen im Skandi-Stil. All-inclusive Warmmiete, voll möbliert." />
   <meta name="twitter:image" content="https://www.maku-hanga.com/logo.png" />
 
   <!-- Favicon -->
@@ -39,10 +39,11 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
+    "@type": "LocalBusiness",
     "name": "Maku Hanga Flats",
-    "description": "Studentenwohnungen in Klagenfurt für internationale Studierende aus Deutschland, Österreich und der Schweiz",
+    "description": "Studentenwohnungen in Klagenfurt im Skandi-Stil",
     "url": "https://www.maku-hanga.com/flats.html",
+    "logo": "https://www.maku-hanga.com/logo.png",
     "image": "https://www.maku-hanga.com/logo.png",
     "telephone": "+4369010401004",
     "email": "office@maku-hanga.com",
@@ -51,563 +52,751 @@
       "streetAddress": "Dürrenmoos 11a",
       "addressLocality": "Völkermarkt",
       "postalCode": "9111",
-      "addressRegion": "Kärnten, Österreich",
-      "addressCountry": ["DE", "AT", "CH"]
-    },
-    "areaServed": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 46.6622,
-        "longitude": 14.6378
-      },
-      "geoRadius": "50000"
+      "addressRegion": "Kärnten",
+      "addressCountry": "AT"
     },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Studentenwohnungen",
       "itemListElement": [
-        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Einzelzimmer"}},
-        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Doppelzimmer"}},
-        {"@type":"Offer","itemOffered":{"@type":"Service","name":"WG-Zimmer"}},
-        {"@type":"Offer","itemOffered":{"@type":"Service","name":"All-inclusive Miete"}}
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Studentenzimmer Klagenfurt"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"All-inclusive Warmmiete"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Voll möbliert"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Semesterverträge"}}
       ]
     }
   }
   </script>
 
-  <!-- CSS -->
   <style>
-    :root {
-      --px: clamp(1rem, 5vw, 3rem);
-      --py: clamp(2rem, 8vw, 4rem);
-      --gap: 2rem;
-      --radius: 12px;
-      --section-alt: #f9f9f9;
-      --text: #1a1a1a;
-      --text-light: #666;
-      --accent: #0a2463;
-      --accent-light: #1b4d89;
-      --highlight: #ff7b00;
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --blue:         #0a2463;
+      --blue-dark:    #071A47;
+      --blue-light:   #0D2F7A;
+      --blue-pale:    #E8ECF5;
+      --orange:       #ff7b00;
+      --orange-dark:  #cc6200;
+      --orange-light: #ff9a33;
+      --orange-pale:  #FFEBD6;
+      --white:        #FFFFFF;
+      --off-white:    #F8FAFF;
+      --section-alt:  #F0F5FF;
+      --anthracite:   #1A1A2E;
+      --gray-dark:    #2D3748;
+      --gray-mid:     #4A5568;
+      --gray-light:   #A0AEC0;
+      --border:       #CBD5E0;
+      --accent:       #0a2463;
+      --accent-light: #0D2F7A;
+      --accent-pale:  #E8ECF5;
+      --accent-subtle: #D1D9EC;
+      --plum:         #2D3748;
+      --font-d: 'Cormorant Garamond', Georgia, serif;
+      --font-b: 'DM Sans', system-ui, sans-serif;
+      --max-w: 1160px;
+      --px: clamp(1.25rem, 4vw, 2.5rem);
+      --py: clamp(4rem, 8vw, 7rem);
+      --r: 14px;
+      --r-sm: 8px;
+      --sh: 0 4px 24px rgba(10,36,99,.08);
+      --sh-lg: 0 12px 40px rgba(10,36,99,.14);
+    }
 
     html { scroll-behavior: smooth; }
-
     body {
-      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      font-size: 1rem;
-      line-height: 1.6;
-      color: var(--text);
-      background: #fff;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+      font-family: var(--font-b);
+      background: var(--white);
+      color: var(--anthracite);
+      line-height: 1.7;
+      font-size: 16px;
+      overflow-x: hidden;
     }
-
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-weight: 600;
-      line-height: 1.2;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    a:hover { color: var(--highlight); }
-
+    a { color: var(--blue); text-decoration: none; transition: color .2s; }
+    a:hover { color: var(--blue-dark); }
     img { max-width: 100%; height: auto; display: block; }
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 var(--px);
-    }
+    .wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--px); }
 
-    /* NAV */
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid #eee;
-      padding: 1rem var(--px);
-    }
+    h1,h2,h3,h4 { font-family: var(--font-d); line-height: 1.15; font-weight: 600; }
+    h1 { font-size: clamp(2.8rem,6vw,5rem); }
+    h2 { font-size: clamp(2rem,4vw,3.2rem); }
+    h3 { font-size: clamp(1.3rem,2.5vw,1.7rem); }
+    h4 { font-size: 1rem; font-weight: 600; }
+    p  { color: var(--gray-mid); line-height: 1.75; }
 
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      font-family: 'Cormorant Garamond', serif;
+    .eyebrow {
+      font-family: var(--font-b);
+      font-size: .7rem;
       font-weight: 600;
-      font-size: 1.25rem;
-      color: var(--accent);
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--blue);
+      display: block;
+      margin-bottom: .75rem;
     }
+    .eyebrow.teal { color: var(--blue); }
 
-    .logo img { height: 40px; }
-
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .nav-link {
-      font-size: 0.95rem;
-      font-weight: 500;
-    }
-
+    /* Buttons */
     .btn {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      border-radius: var(--radius);
-      font-weight: 500;
-      font-size: 0.95rem;
-      text-align: center;
-      cursor: pointer;
-      transition: all 0.2s;
-      border: 2px solid transparent;
+      display: inline-flex; align-items: center; gap: .45em;
+      font-family: var(--font-b); font-size: .88rem; font-weight: 500;
+      padding: .78em 1.75em; border-radius: 3em; border: 2px solid transparent;
+      cursor: pointer; transition: all .22s; text-decoration: none;
+      line-height: 1; white-space: nowrap;
+    }
+    .btn-p { background: var(--orange); color: #fff; border-color: var(--orange); }
+    .btn-p:hover { background: var(--orange-dark); border-color: var(--orange-dark); color: #fff; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255,123,0,.35); }
+    .btn-o { background: transparent; color: var(--anthracite); border-color: var(--anthracite); }
+    .btn-o:hover { background: var(--anthracite); color: #fff; transform: translateY(-2px); }
+    .btn-t { background: var(--blue); color: #fff; border-color: var(--blue); }
+    .btn-t:hover { background: var(--blue-dark); border-color: var(--blue-dark); color: #fff; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(10,36,99,.3); }
+    .btn-ot { background: transparent; color: var(--blue); border-color: var(--blue); }
+    .btn-ot:hover { background: var(--blue); color: #fff; transform: translateY(-2px); }
+
+    /* Fade-in */
+    .fi { opacity: 0; transform: translateY(22px); transition: opacity .65s ease, transform .65s ease; }
+    .fi.on { opacity: 1; transform: none; }
+    .d1 { transition-delay: .1s; } .d2 { transition-delay: .2s; }
+    .d3 { transition-delay: .3s; } .d4 { transition-delay: .4s; }
+
+    /* =====================
+       NAVBAR
+    ===================== */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 1.2rem 0; transition: padding .3s, background .3s, box-shadow .3s;
+    }
+    #nav.scrolled {
+      padding: .7rem 0;
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 2px 20px rgba(10,36,99,.08);
+    }
+    .ni { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+    .nlogo { display: flex; align-items: center; gap: .65rem; text-decoration: none; }
+    .nlogo img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; transition: transform .35s cubic-bezier(.34,1.56,.64,1); }
+    .nlogo:hover img { transform: scale(1.1) rotate(-6deg); }
+    .nlogo-t { font-family: var(--font-d); font-size: 1.25rem; font-weight: 600; color: var(--anthracite); }
+    .nlinks { display: flex; align-items: center; gap: 2rem; list-style: none; }
+    .nlinks a { font-size: .875rem; font-weight: 500; color: var(--brown-mid); text-decoration: none; transition: color .2s; }
+    .nlinks a:hover { color: var(--orange); }
+    .hbg { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+    .hbg span { display: block; width: 24px; height: 2px; background: var(--anthracite); border-radius: 2px; transition: all .28s; }
+    @media (max-width: 768px) { .nlinks, .ncta { display: none; } .hbg { display: flex; } }
+
+    /* Mobile menu */
+    #mob { display: none; position: fixed; inset: 0; z-index: 999; background: var(--warm-white); flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }
+    #mob.open { display: flex; }
+    #mob a { font-family: var(--font-d); font-size: 2rem; color: var(--anthracite); font-weight: 600; text-decoration: none; transition: color .2s; }
+    #mob a:hover { color: var(--orange); }
+    .mclose { position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; font-size: 1.8rem; cursor: pointer; color: var(--anthracite); }
+
+    /* =====================
+       HERO
+    ===================== */
+    #home {
+      min-height: 80svh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; text-align: center;
+      padding: 8rem var(--px) 5rem; background: var(--white); position: relative; overflow: hidden;
+    }
+    #home::before {
+      content: ''; position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%,-58%);
+      width: min(680px,100vw); height: min(680px,100vw);
+      background: radial-gradient(ellipse, rgba(10,36,99,.08) 0%, transparent 68%);
+      pointer-events: none;
+    }
+    .hlogo {
+      width: clamp(100px,15vw,140px); height: clamp(100px,15vw,140px);
+      margin: 0 auto 1.5rem; position: relative; z-index: 1;
+      animation: heroPulse 4s ease-in-out infinite, fup .9s ease both;
+      filter: drop-shadow(0 12px 40px rgba(10,36,99,.28));
+    }
+    .hlogo img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
+    .hcont { position: relative; z-index: 1; max-width: 780px; }
+    .heb { font-size: .72rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--blue); margin-bottom: 1.2rem; animation: fup .9s .1s ease both; }
+    .htitle { font-size: clamp(2.5rem,6vw,4.2rem); font-weight: 700; color: var(--anthracite); line-height: 1.07; margin-bottom: 1.4rem; animation: fup .9s .2s ease both; }
+    .htitle em { font-style: italic; color: var(--blue); }
+    .hsub { font-size: clamp(1rem,2vw,1.18rem); color: var(--gray-mid); line-height: 1.7; max-width: 520px; margin: 0 auto 2.4rem; animation: fup .9s .3s ease both; font-weight: 300; }
+    .hact { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; animation: fup .9s .4s ease both; }
+    .hscroll { position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: .5rem; z-index: 1; animation: fup .9s .7s ease both; }
+    .hscroll span { font-size: .66rem; letter-spacing: .15em; text-transform: uppercase; color: var(--gray-light); font-weight: 500; }
+    .smouse { width: 20px; height: 30px; border: 1.5px solid var(--border); border-radius: 10px; position: relative; }
+    .smouse::after { content: ''; position: absolute; top: 5px; left: 50%; transform: translateX(-50%); width: 3px; height: 6px; background: var(--gray-light); border-radius: 2px; animation: bce 1.5s infinite; }
+
+    @keyframes fup { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes bce { 0%,100% { transform:translateX(-50%) translateY(0); opacity:1; } 50% { transform:translateX(-50%) translateY(6px); opacity:.4; } }
+    @keyframes heroPulse {
+      0%, 100% { filter: drop-shadow(0 12px 40px rgba(10,36,99,.28)); transform: scale(1); }
+      50% { filter: drop-shadow(0 16px 60px rgba(10,36,99,.42)); transform: scale(1.04); }
     }
 
-    .btn-t {
-      background: var(--accent);
-      color: white;
+    /* =====================
+       MARQUEE BELT
+    ===================== */
+    .marquee-belt {
+      overflow: hidden;
+      padding: 1.1rem 0;
+      background: var(--blue);
+      user-select: none;
     }
-
-    .btn-t:hover {
-      background: var(--accent-light);
-      color: white;
-    }
-
-    .btn-ot {
-      background: transparent;
-      color: var(--accent);
-      border-color: var(--accent);
-    }
-
-    .btn-ot:hover {
-      background: var(--accent);
-      color: white;
-    }
-
-    /* HERO */
-    .hero {
-      padding: var(--py) var(--px);
-      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
-      color: white;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: clamp(2.5rem, 5vw, 4rem);
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.25rem;
-      max-width: 700px;
-      margin: 0 auto 2rem;
-      opacity: 0.9;
-    }
-
-    /* SECTIONS */
-    section {
-      padding: var(--py) var(--px);
-    }
-
-    .section-alt {
-      background: var(--section-alt);
-    }
-
-    .section-title {
-      font-size: clamp(2rem, 4vw, 3rem);
-      margin-bottom: 1rem;
-      color: var(--accent);
-    }
-
-    .section-desc {
-      font-size: 1.125rem;
-      color: var(--text-light);
-      max-width: 700px;
-      margin-bottom: 3rem;
-    }
-
-    /* FEATURES */
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: var(--gap);
-      margin-bottom: 3rem;
-    }
-
-    .feature-card {
-      background: white;
-      border-radius: var(--radius);
-      padding: 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      border: 1px solid #eee;
-    }
-
-    .feature-icon {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .feature-title {
-      font-size: 1.5rem;
-      margin-bottom: 0.75rem;
-      color: var(--accent);
-    }
-
-    /* GALLERY */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 3rem;
-    }
-
-    .gallery-img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: var(--radius);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    /* FAQ */
-    .faq-grid {
-      display: grid;
-      gap: 1rem;
-      margin-bottom: 3rem;
-    }
-
-    .faq-item {
-      background: white;
-      border-radius: var(--radius);
-      padding: 1.5rem;
-      border: 1px solid #eee;
-    }
-
-    .faq-question {
-      font-size: 1.2rem;
-      margin-bottom: 0.75rem;
-      color: var(--accent);
-    }
-
-    /* CONTACT */
-    .contact-section {
-      background: white;
-      border-radius: var(--radius);
-      padding: 3rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      margin-bottom: 3rem;
-    }
-
-    .contact-info {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    .contact-item {
+    .marquee-track {
       display: flex;
-      align-items: flex-start;
-      gap: 1rem;
+      gap: 2.5rem;
+      animation: marqueeScroll 22s linear infinite;
+      width: max-content;
     }
-
-    .contact-icon {
-      font-size: 1.5rem;
-      color: var(--highlight);
-    }
-
-    .contact-form {
-      display: grid;
-      gap: 1.5rem;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    .form-label {
-      font-weight: 500;
-    }
-
-    .form-input,
-    .form-textarea {
-      padding: 0.75rem 1rem;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      font-family: inherit;
+    .marquee-track span {
+      font-family: var(--font-d);
       font-size: 1rem;
+      color: rgba(255,255,255,.7);
+      white-space: nowrap;
+      letter-spacing: .06em;
+      font-style: italic;
     }
+    .marquee-track span.hl { color: #FFFFFF; opacity: .95; font-style: normal; font-weight: 600; font-family: var(--font-b); font-size: .78rem; letter-spacing: .18em; text-transform: uppercase; }
+    @keyframes marqueeScroll { 0% { transform:translateX(0); } 100% { transform:translateX(-50%); } }
 
-    .form-textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
+    /* =====================
+       FLATS DETAIL
+    ===================== */
+    #flats-detail { padding: var(--py) var(--px); background: var(--off-white); }
+    .fi2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; margin-bottom: 3rem; }
+    .fi2-t h2 { margin-bottom: 1.2rem; }
+    .fi2-t p  { margin-bottom: 1rem; }
+    .fstats { background: var(--blue); border-radius: var(--r); padding: 2rem; display: flex; flex-direction: column; gap: 1.2rem; }
+    .sr { display: flex; align-items: center; gap: 1rem; }
+    .sn { font-family: var(--font-d); font-size: 2.4rem; font-weight: 700; color: #fff; line-height: 1; min-width: 2.8rem; }
+    .sl { font-size: .875rem; color: rgba(255,255,255,.78); line-height: 1.4; }
+    .sl strong { color: #fff; display: block; }
+    .shr { height: 1px; background: rgba(255,255,255,.18); }
+    .fg { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.2rem; margin-bottom: 2.5rem; }
+    .ff { background: var(--white); border: 1px solid var(--border); border-radius: var(--r); padding: 1.4rem; transition: box-shadow .22s, transform .22s; }
+    .ff:hover { box-shadow: var(--sh); transform: translateY(-3px); }
+    .ff::before { content: ''; display: block; height: 3px; background: var(--blue); border-radius: 2px; margin-bottom: 1.1rem; }
+    .ff h4 { color: var(--anthracite); margin-bottom: .4rem; }
+    .ff p  { font-size: .85rem; margin: 0; }
+    .fcta { background: var(--blue-pale); border: 1px solid var(--accent-subtle); border-radius: var(--r); padding: 2.4rem; text-align: center; }
+    .fcta h3 { color: var(--blue); margin-bottom: .7rem; }
+    .fcta p  { max-width: 460px; margin: 0 auto 1.7rem; }
+    .fca { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    @media (max-width: 768px) { .fi2 { grid-template-columns: 1fr; gap: 2rem; } .fg { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) { .fg { grid-template-columns: 1fr; } }
 
-    /* FOOTER */
-    footer {
-      background: var(--accent);
-      color: white;
-      padding: 3rem var(--px);
-      text-align: center;
-    }
+    /* Wave divider */
+    .wsep { display: block; width: 100%; overflow: hidden; line-height: 0; margin-top: -1px; }
+    .wsep svg { display: block; width: 100%; height: 56px; }
 
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin: 2rem 0;
-      flex-wrap: wrap;
-    }
+    /* =====================
+       GALLERY
+    ===================== */
+    #gallery { padding: var(--py) var(--px); background: var(--section-alt); }
+    .sh { text-align: center; margin-bottom: 3.5rem; }
+    .sh h2 { margin-bottom: 1rem; }
+    .sh p  { max-width: 540px; margin: 0 auto; }
+    .ggrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+    .gitem { background: var(--white); border-radius: var(--r); overflow: hidden; border: 1px solid var(--border); transition: transform .3s, box-shadow .3s; }
+    .gitem:hover { transform: translateY(-6px); box-shadow: var(--sh-lg); }
+    .gimg { height: 200px; background: var(--blue-pale); display: flex; align-items: center; justify-content: center; color: var(--gray-mid); font-size: .9rem; }
+    .gdesc { padding: 1.2rem; }
+    .gdesc h4 { color: var(--anthracite); margin-bottom: .4rem; }
+    .gdesc p { font-size: .85rem; margin: 0; }
 
-    .footer-link {
-      color: rgba(255,255,255,0.8);
-    }
+    /* =====================
+       FAQ
+    ===================== */
+    #faq { padding: var(--py) var(--px); background: var(--white); }
+    .faq-item { margin-bottom: 1rem; border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; }
+    .faq-q { padding: 1.2rem 1.5rem; background: var(--off-white); display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+    .faq-q h4 { margin: 0; color: var(--anthracite); }
+    .faq-q span { font-size: 1.2rem; color: var(--blue); transition: transform .3s; }
+    .faq-q.active span { transform: rotate(45deg); }
+    .faq-a { padding: 0 1.5rem; max-height: 0; overflow: hidden; transition: max-height .3s, padding .3s; }
+    .faq-a.open { padding: 1.2rem 1.5rem; max-height: 500px; }
+    .faq-a p { margin: 0; }
 
-    .footer-link:hover {
-      color: white;
+    /* =====================
+       KONTAKT
+    ===================== */
+    #kontakt { padding: var(--py) var(--px); background: var(--off-white); }
+    .kg { display: grid; grid-template-columns: 1.1fr .9fr; gap: 4rem; align-items: start; }
+    .fw h2 { margin-bottom: .7rem; }
+    .fw > p { margin-bottom: 1.75rem; }
+    .fg2 { margin-bottom: 1.1rem; }
+    .fg2 label { display: block; font-size: .76rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--gray-mid); margin-bottom: .45rem; }
+    .fg2 input, .fg2 select, .fg2 textarea {
+      width: 100%; padding: .82em 1.05em; font-family: var(--font-b); font-size: .93rem;
+      color: var(--anthracite); background: var(--white); border: 1.5px solid var(--border);
+      border-radius: var(--r-sm); transition: border-color .2s, box-shadow .2s; outline: none; -webkit-appearance: none;
     }
+    .fg2 input:focus, .fg2 select:focus, .fg2 textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(10,36,99,.14); }
+    .fg2 textarea { resize: vertical; min-height: 130px; }
+    .frow { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .fprivacy { font-size: .78rem; color: var(--gray-light); margin-top: .7rem; }
+    .fprivacy a { color: var(--blue); }
+    .ci h3 { font-family: var(--font-d); font-size: 1.5rem; margin-bottom: 1.75rem; color: var(--anthracite); }
+    .cii { display: flex; gap: .9rem; margin-bottom: 1.4rem; align-items: flex-start; }
+    .cic { width: 40px; height: 40px; border-radius: 10px; background: var(--blue-pale); display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0; }
+    .cit { font-size: .875rem; }
+    .cit strong { display: block; color: var(--anthracite); font-weight: 500; margin-bottom: .15rem; }
+    .cit a { color: var(--gray-mid); }
+    .cit a:hover { color: var(--blue); }
+    .chours { margin-top: 2rem; padding: 1.2rem 1.4rem; background: var(--blue-pale); border-radius: var(--r); border-left: 3px solid var(--blue); }
+    .chours h4 { color: var(--anthracite); margin-bottom: .4rem; font-size: .875rem; font-family: var(--font-b); }
+    .chours p { font-size: .85rem; margin: 0; }
+    @media (max-width: 768px) { .kg { grid-template-columns: 1fr; gap: 2.5rem; } .frow { grid-template-columns: 1fr; } }
 
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .hero h1 { font-size: 2.25rem; }
-      .section-title { font-size: 2rem; }
-      .contact-section { padding: 2rem 1rem; }
-    }
+    /* =====================
+       FOOTER
+    ===================== */
+    #footer { background: var(--anthracite); color: rgba(255,255,255,.65); }
+    .ftop { padding: 4rem 0 3rem; display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 2.5rem; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .fbrand img { width: 52px; margin-bottom: 1rem; border-radius: 50%; }
+    .fbrand p { font-size: .85rem; color: rgba(255,255,255,.5); line-height: 1.7; margin-bottom: 1.4rem; }
+    .fbb { display: flex; gap: .6rem; flex-wrap: wrap; }
+    .fbb a { font-size: .75rem; padding: .45em 1em; border: 1px solid rgba(255,255,255,.18); border-radius: 2em; color: rgba(255,255,255,.55); text-decoration: none; transition: border-color .2s, color .2s; }
+    .fbb a:hover { border-color: rgba(255,255,255,.4); color: rgba(255,255,255,.85); }
+    .fcol h4 { font-family: var(--font-b); font-size: .7rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.35); margin-bottom: 1.2rem; }
+    .fcol ul { list-style: none; display: flex; flex-direction: column; gap: .65rem; }
+    .fcol ul a { font-size: .875rem; color: rgba(255,255,255,.6); text-decoration: none; transition: color .2s; }
+    .fcol ul a:hover { color: var(--blue-light); }
+    .fbot { padding: 1.75rem 0; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .fbot p { font-size: .78rem; color: rgba(255,255,255,.35); margin: 0; }
+    .fleg { display: flex; gap: 1.5rem; }
+    .fleg a { font-size: .78rem; color: rgba(255,255,255,.35); text-decoration: none; transition: color .2s; }
+    .fleg a:hover { color: rgba(255,255,255,.65); }
+    @media (max-width: 860px) { .ftop { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 540px) { .ftop { grid-template-columns: 1fr; } .fbot { flex-direction: column; text-align: center; } }
+
+    /* Cookie notice */
+    #ck { position: fixed; bottom: 1.4rem; left: 50%; transform: translateX(-50%); background: var(--anthracite); padding: .9rem 1.4rem; border-radius: var(--r); display: flex; align-items: center; gap: 1.4rem; box-shadow: 0 8px 32px rgba(0,0,0,.3); z-index: 9999; max-width: min(90vw,540px); transition: opacity .3s, transform .3s; }
+    #ck.gone { opacity: 0; transform: translateX(-50%) translateY(16px); pointer-events: none; }
+    #ck p  { color: rgba(255,255,255,.65); margin: 0; font-size: .8rem; }
+    #ck a  { color: var(--blue-light); }
+    #ckok { background: var(--blue); color: #fff; border: none; padding: .5em 1.2em; border-radius: 2em; font-family: var(--font-b); font-size: .78rem; font-weight: 500; cursor: pointer; white-space: nowrap; flex-shrink: 0; transition: background .2s; }
+    #ckok:hover { background: var(--blue-dark); }
   </style>
 </head>
 <body>
-  <!-- NAVIGATION -->
-  <nav>
-    <div class="container nav-inner">
-      <a href="index.html" class="logo">
-        <img src="logo.png" alt="Maku Hanga Logo" />
-        <span>Maku Hanga</span>
+
+<!-- COOKIE NOTICE -->
+<div id="ck">
+  <p>Diese Website verwendet <strong>keine Cookies</strong> und kein Tracking. <a href="datenschutz.html">Datenschutz</a></p>
+  <button id="ckok" onclick="dismissCk()">OK</button>
+</div>
+
+<!-- MOBILE MENU -->
+<div id="mob" role="dialog" aria-modal="true" aria-label="Navigation">
+  <button class="mclose" onclick="closeMob()" aria-label="Schließen">✕</button>
+  <a href="#flats-detail" onclick="closeMob()">Übersicht</a>
+  <a href="#gallery" onclick="closeMob()">Galerie</a>
+  <a href="#faq" onclick="closeMob()">FAQ</a>
+  <a href="#sponsoring" onclick="closeMob()">Partner</a>
+  <a href="#kontakt" onclick="closeMob()">Kontakt</a>
+  <a href="/" onclick="closeMob()">← Zur Hauptseite</a>
+</div>
+
+<!-- NAVBAR -->
+<nav id="nav" role="navigation" aria-label="Hauptnavigation">
+  <div class="wrap">
+    <div class="ni">
+      <a href="/" class="nlogo" aria-label="Maku Hanga – Startseite">
+        <img src="logo.png" alt="Maku Hanga" width="38" height="38" />
+        <span class="nlogo-t">Maku Hanga Flats</span>
       </a>
-      <div class="nav-links">
-        <a href="index.html#home" class="nav-link">Start</a>
-        <a href="index.html#services" class="nav-link">Services</a>
-        <a href="index.html#flats" class="nav-link">Wohnungen</a>
-        <a href="index.html#kontakt" class="nav-link">Kontakt</a>
-        <a href="#kontakt" class="btn btn-t">Zimmer anfragen</a>
-      </div>
+      <ul class="nlinks" role="list">
+        <li><a href="#flats-detail">Übersicht</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#sponsoring">Partner</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+      <a href="#kontakt" class="btn btn-t ncta">Zimmer anfragen</a>
+      <button class="hbg" onclick="openMob()" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container" style="position: relative;">
-      <div style="display: flex; align-items: center; gap: 3rem; flex-wrap: wrap;">
-        <div style="flex: 1; min-width: 300px;">
-          <h1>Studentenwohnungen in Klagenfurt</h1>
-          <p>All-inclusive WG-Zimmer für internationale Studierende aus dem DACH-Raum. Voll möbliert, Skandi-Design, sofort bezugsfertig.</p>
-          <a href="#kontakt" class="btn btn-t" style="margin-top: 1.5rem;">Jetzt Zimmer anfragen →</a>
+<!-- HERO -->
+<section id="home" aria-labelledby="h-home">
+  <div class="hcont">
+    <div class="hlogo">
+      <img src="logo.png" alt="Maku Hanga Flats" />
+    </div>
+    <span class="heb">Studentenwohnungen Klagenfurt</span>
+    <h1 id="h-home" class="htitle">Wohnen in Klagenfurt —<br><em>modern, günstig, all‑inclusive.</em></h1>
+    <p class="hsub">Moderne Studentenwohnungen im Skandi-Stil: hell, funktional und voll möbliert. Für Studierende der Alpen-Adria-Universität, FH Kärnten und HTL Klagenfurt.</p>
+    <div class="hact">
+      <a href="#flats-detail" class="btn btn-t">Alle Details →</a>
+      <a href="#kontakt" class="btn btn-ot">Zimmer anfragen</a>
+    </div>
+  </div>
+  <div class="hscroll">
+    <span>Scroll</span>
+    <div class="smouse"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-belt" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="hl">Studentenwohnungen Klagenfurt</span>
+    <span>·</span>
+    <span>All‑inclusive Warmmiete</span>
+    <span>·</span>
+    <span>Voll möbliert</span>
+    <span>·</span>
+    <span>Skandi‑Design</span>
+    <span>·</span>
+    <span>Semesterverträge</span>
+    <span>·</span>
+    <span>Karawankenblick</span>
+    <span>·</span>
+    <span>Uni‑nah</span>
+    <span>·</span>
+    <span>Studentenwohnungen Klagenfurt</span>
+    <span>·</span>
+    <span>All‑inclusive Warmmiete</span>
+    <span>·</span>
+    <span>Voll möbliert</span>
+    <span>·</span>
+    <span>Skandi‑Design</span>
+    <span>·</span>
+    <span>Semesterverträge</span>
+    <span>·</span>
+    <span>Karawankenblick</span>
+    <span>·</span>
+    <span>Uni‑nah</span>
+  </div>
+</div>
+
+<!-- FLATS DETAIL -->
+<section id="flats-detail" aria-labelledby="h-flats">
+  <div class="wrap">
+    <div class="fi2">
+      <div class="fi2-t fi">
+        <span class="eyebrow teal">Flats Maku Hanga</span>
+        <h2 id="h-flats">Wohnen in Klagenfurt —<br>modern, günstig, all-inclusive.</h2>
+        <p>Moderne Studentenwohnungen im Skandi-Stil: hell, funktional und voll möbliert.
+        Für Studierende der Alpen-Adria-Universität, FH Kärnten und HTL Klagenfurt.</p>
+        <p>Mit über 21 Zimmern in Klagenfurt — darunter das energetisch sanierte Rothauer Hochhaus
+        mit traumhaftem Südostblick auf die Karawanken — bieten wir echtes Wohlfühlwohnen
+        zu fairen Konditionen.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
+          <a href="#kontakt" class="btn btn-t">Zimmer anfragen →</a>
+          <a href="#kontakt" class="btn btn-ot">Persönliche Beratung</a>
         </div>
-        <div style="flex: 1; min-width: 300px;">
-          <img src="img/avatars/lizzy_avatar.jpg" alt="Lizzy – KI-Avatar für Studenten-Tipps" style="width: 100%; max-width: 400px; border-radius: var(--radius); box-shadow: 0 20px 40px rgba(0,0,0,0.15); margin: 0 auto; display: block;" />
+      </div>
+      <div class="fstats fi d2">
+        <div class="sr"><span class="sn">21+</span><div class="sl"><strong>Studentenzimmer</strong>in Klagenfurt verfügbar</div></div>
+        <div class="shr"></div>
+        <div class="sr"><span class="sn">∞</span><div class="sl"><strong>All-inclusive</strong>Strom, Heizung, Wasser, Müll</div></div>
+        <div class="shr"></div>
+        <div class="sr"><span class="sn">0</span><div class="sl"><strong>Stress beim Einzug</strong>Vollmöbliert, direkt beziehbar</div></div>
+      </div>
+    </div>
+
+    <div class="fg">
+      <div class="ff fi d1"><h4>🛋️ Skandi-Design</h4><p>IKEA-inspiriertes Konzept: hell, modern, gemütlich. Alles da, nichts zu viel.</p></div>
+      <div class="ff fi d2"><h4>💰 Warmmiete all-in</h4><p>Strom, Heizung, Wasser und Müllabfuhr inklusive. Keine bösen Überraschungen.</p></div>
+      <div class="ff fi d3"><h4>📍 Beste Lage</h4><p>Uni-nah, gut angebunden. Rothauer Hochhaus: frisch saniert, Karawankenblick inklusive.</p></div>
+      <div class="ff fi d1"><h4>🌱 Nachhaltig</h4><p>Energetisch sanierte Gebäude, niedrige Betriebskosten — gut für Geldbeutel und Umwelt.</p></div>
+      <div class="ff fi d2"><h4>📝 Semesterverträge</h4><p>Halbjährliche Mietverträge, passend zu WS &amp; SS. Verlängerbar — so lange du bleiben willst.</p></div>
+      <div class="ff fi d3"><h4>🤝 Persönliche Betreuung</h4><p>Direkter Kontakt zur Vermieterin — kein anonymes Büro, echtes Miteinander.</p></div>
+    </div>
+
+    <div class="fcta fi">
+      <h3>Zimmer verfügbar?</h3>
+      <p>Für aktuelle Zimmerangebote kontaktieren Sie uns bitte direkt —
+      wir informieren Sie gerne über verfügbare Wohnungen und Termine.</p>
+      <div class="fca">
+        <a href="mailto:office@maku-hanga.com?subject=Zimmeranfrage%20Maku%20Hanga%20Flats" class="btn btn-t">Zimmer anfragen →</a>
+        <a href="#kontakt" class="btn btn-ot">Kontakt aufnehmen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+          <div style="background: linear-gradient(135deg, rgba(10,36,99,0.8) 0%, rgba(255,123,0,0.8) 100%); color: white; padding: 0.5rem 1rem; border-radius: 2em; font-size: 0.8rem; font-weight: 500;">🍳 Küche</div>
+        </div>
+        <div class="gdesc">
+          <h4>Küche</h4>
+          <p>Voll ausgestattete Küchen mit Herd, Kühlschrank, Spüle und Geschirr.</p>
+        </div>
+      </div>
+      <div class="gitem fi d4">
+        <div class="gimg" style="background-image: url('https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg'); background-size: cover; background-position: center;">
+          <div style="background: linear-gradient(135deg, rgba(10,36,99,0.8) 0%, rgba(255,123,0,0.8) 100%); color: white; padding: 0.5rem 1rem; border-radius: 2em; font-size: 0.8rem; font-weight: 500;">🛁 Bad</div>
+        </div>
+        <div class="gdesc">
+          <h4>Badezimmer</h4>
+          <p>Moderne Bäder mit Dusche, WC, Waschbecken und Spiegel.</p>
+        </div>
+      </div>
+      <div class="gitem fi d1">
+        <div class="gimg" style="background-image: url('https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg'); background-size: cover; background-position: center;">
+          <div style="background: linear-gradient(135deg, rgba(10,36,99,0.8) 0%, rgba(255,123,0,0.8) 100%); color: white; padding: 0.5rem 1rem; border-radius: 2em; font-size: 0.8rem; font-weight: 500;">📚 Arbeitsplatz</div>
+        </div>
+        <div class="gdesc">
+          <h4>Arbeitsbereich</h4>
+          <p>Ruhige Schreibtische mit guter Beleuchtung für konzentriertes Lernen.</p>
+        </div>
+      </div>
+      <div class="gitem fi d2">
+        <div class="gimg" style="background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg'); background-size: cover; background-position: center;">
+          <div style="background: linear-gradient(135deg, rgba(10,36,99,0.8) 0%, rgba(255,123,0,0.8) 100%); color: white; padding: 0.5rem 1rem; border-radius: 2em; font-size: 0.8rem; font-weight: 500;">🌿 Balkon</div>
+        </div>
+        <div class="gdesc">
+          <h4>Balkon/Terrasse</h4>
+          <p>Ausblick auf die Karawanken — perfekt für Pausen und Entspannung.</p>
+        </div>
+      </div>
+      <!-- Zusätzliche Bilder mit Gesichtern -->
+      <div class="gitem fi d3">
+        <div class="gimg" style="background-image: url('https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg'); background-size: cover; background-position: center;">
+          <div style="background: linear-gradient(135deg, rgba(10,36,99,0.8) 0%, rgba(255,123,0,0.8) 100%); color: white; padding: 0.5rem 1rem; border-radius: 2em; font-size: 0.8rem; font-weight: 500;">👥 Gemeinschaft</div>
+        </div>
+        <div class="gdesc">
+          <h4>Gemeinsames Lernen</h4>
+          <p>Studenten lernen zusammen in gemütlicher Atmosphäre — Austausch und Unterstützung.</p>
+        </div>
+      </div>
+      <div class="gitem fi d4">
+        <div class="gimg" style="background-image: url('https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg'); background-size: cover; background-position: center;">
+          <div style="background: linear-gradient(135deg, rgba(10,36,99,0.8) 0%, rgba(255,123,0,0.8) 100%); color: white; padding: 0.5rem 1rem; border-radius: 2em; font-size: 0.8rem; font-weight: 500;">🎉 Soziales</div>
+        </div>
+        <div class="gdesc">
+          <h4>Soziales Leben</h4>
+          <p>Freundschaften knüpfen und gemeinsam Zeit verbringen — mehr als nur eine Wohnung.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FEATURES -->
-  <section class="container">
-    <h2 class="section-title">Was unsere Zimmer bieten</h2>
-    <p class="section-desc">Modernes Wohnen für Studierende — alles inklusive, keine versteckten Kosten.</p>
-    
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">🛋️</div>
-        <h3 class="feature-title">Voll möbliert</h3>
-        <p>Bett, Schreibtisch, Kleiderschrank, Regale — alles vorhanden. Skandi-Design mit hellem Holz und weißen Akzenten.</p>
-      </div>
-      
-      <div class="feature-card">
-        <div class="feature-icon">🍳</div>
-        <h3 class="feature-title">Gemeinschaftsküche</h3>
-        <p>Moderne Einbauküche mit Herd, Backofen, Kühlschrank, Geschirrspüler. Alles, was du zum Kochen brauchst.</p>
-      </div>
-      
-      <div class="feature-card">
-        <div class="feature-icon">🧺</div>
-        <h3 class="feature-title">Waschküche inklusive</h3>
-        <p>Waschmaschine und Trockner im Haus. Kein Münzsystem — einfach nutzen, wenn du sie brauchst.</p>
-      </div>
-      
-      <div class="feature-card">
-        <div class="feature-icon">📶</div>
-        <h3 class="feature-title">Schnelles WLAN</h3>
-        <p>Glasfaser-Internet inklusive. Perfekt für Online-Vorlesungen, Streaming und Videocalls.</p>
-      </div>
-      
-      <div class="feature-card">
-        <div class="feature-icon">🚲</div>
-        <h3 class="feature-title">Fahrrad-Abstellung</h3>
-        <p>Sicherer Fahrradraum im Haus. Perfekt für die kurzen Wege in Klagenfurt.</p>
-      </div>
-      
-      <div class="feature-card">
-        <div class="feature-icon">🌳</div>
-        <h3 class="feature-title">Grüne Lage</h3>
-        <p>Ruhige Wohngegend mit Grünflächen. Nahe Universität und Stadtzentrum.</p>
-      </div>
+<!-- WAVE -->
+<div class="wsep" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="1440" height="56" fill="#F3EDE2"/><path d="M0,28 C360,56 1080,0 1440,28 L1440,56 L0,56 Z" fill="#FFFEFB"/></svg></div>
+
+<!-- FAQ -->
+<section id="faq" aria-labelledby="h-faq">
+  <div class="wrap">
+    <div class="sh fi">
+      <span class="eyebrow">FAQ</span>
+      <h2 id="h-faq">Häufige Fragen</h2>
+      <p>Alles, was Sie über Maku Hanga Flats wissen müssen.</p>
     </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section class="section-alt">
-    <div class="container">
-      <h2 class="section-title">Einblicke</h2>
-      <p class="section-desc">So sehen unsere Zimmer aus — hell, modern und gemütlich.</p>
-      
-      <div class="gallery-grid">
-        <img src="img/avatars/lizzy_avatar.jpg" alt="Lizzy – unser KI-Avatar für Studenten-Content" class="gallery-img" style="object-fit: cover; border-radius: var(--radius);" />
-        <img src="img/avatars/robert_avatar.jpg" alt="Robert – Business-Coach für Studenten-Tipps" class="gallery-img" style="object-fit: cover; border-radius: var(--radius);" />
-        <img src="img/showcase/social_media_banner.png" alt="Social Media Banner – Studenten-Tipps" class="gallery-img" style="object-fit: cover; border-radius: var(--radius);" />
-        <div style="background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: white; font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; padding: 1rem; text-align: center;">
-          Studentenleben<br>in Klagenfurt
+    <div class="faq-list">
+      <div class="faq-item fi d1">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <h4>Was ist in der Miete alles inklusive?</h4>
+          <span>+</span>
+        </div>
+        <div class="faq-a">
+          <p><strong>All-inclusive Warmmiete:</strong> Strom, Heizung, Wasser, Müllabfuhr, Grundsteuer, Gebäudeversicherung. Keine versteckten Kosten.</p>
+        </div>
+      </div>
+      <div class="faq-item fi d2">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <h4>Wie lange sind die Mietverträge?</h4>
+          <span>+</span>
+        </div>
+        <div class="faq-a">
+          <p><strong>Semesterverträge:</strong> Halbjährlich (Wintersemester & Sommersemester). Verlängerbar bei Bedarf.</p>
+        </div>
+      </div>
+      <div class="faq-item fi d3">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <h4>Ist die Wohnung möbliert?</h4>
+          <span>+</span>
+        </div>
+        <div class="faq-a">
+          <p><strong>Ja, voll möbliert:</strong> Bett, Schreibtisch, Stuhl, Schrank, Sofa, Kücheneinrichtung, Geschirr. Sie brauchen nur persönliche Dinge.</p>
+        </div>
+      </div>
+      <div class="faq-item fi d4">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <h4>Wie ist die Lage zur Uni?</h4>
+          <span>+</span>
+        </div>
+        <div class="faq-a">
+          <p><strong>Exzellent:</strong> 10–15 Minuten mit dem Bus zur Alpen-Adria-Universität, FH Kärnten und HTL Klagenfurt. Gute Öffi-Anbindung.</p>
+        </div>
+      </div>
+      <div class="faq-item fi d1">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <h4>Gibt es Parkplätze?</h4>
+          <span>+</span>
+        </div>
+        <div class="faq-a">
+          <p><strong>Ja:</strong> Kostenpflichtige Parkplätze verfügbar. Fahrradstellplätze kostenlos.</p>
+        </div>
+      </div>
+      <div class="faq-item fi d2">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <h4>Kann ich vorab eine Besichtigung vereinbaren?</h4>
+          <span>+</span>
+        </div>
+        <div class="faq-a">
+          <p><strong>Natürlich:</strong> Vereinbaren Sie einfach einen Termin per E-Mail oder Telefon.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FAQ -->
-  <section class="container">
-    <h2 class="section-title">Häufige Fragen</h2>
-    <p class="section-desc">Alles, was du über unsere Studentenzimmer wissen musst.</p>
-    
-    <div class="faq-grid">
-      <div class="faq-item">
-        <h3 class="faq-question">Was kostet ein Zimmer?</h3>
-        <p>Die Miete beträgt €450–€550 pro Monat (je nach Zimmergröße). Inklusive aller Nebenkosten (Strom, Wasser, Heizung, Internet). Kaution: 2 Monatsmieten.</p>
-      </div>
-      
-      <div class="faq-item">
-        <h3 class="faq-question">Wie lange sind die Mietverträge?</h3>
-        <p>Mindestmietdauer: 6 Monate. Ideal für ein oder zwei Semester. Verlängerung möglich.</p>
-      </div>
-      
-      <div class="faq-item">
-        <h3 class="faq-question">Kann ich mit einem Freund zusammenziehen?</h3>
-        <p>Ja! Wir haben auch 2er-WGs. Frag einfach nach Verfügbarkeit.</p>
-      </div>
-      
-      <div class="faq-item">
-        <h3 class="faq-question">Wie schnell kann ich einziehen?</h3>
-        <p>Wenn ein Zimmer frei ist: innerhalb von 1–2 Wochen nach Vertragsunterzeichnung.</p>
-      </div>
-      
-      <div class="faq-item">
-        <h3 class="faq-question">Sind Haustiere erlaubt?</h3>
-        <p>Kleine Haustiere (Katzen, kleine Hunde) nach Absprache möglich. Bitte frag vorher.</p>
-      </div>
-      
-      <div class="faq-item">
-        <h3 class="faq-question">Was muss ich mitbringen?</h3>
-        <p>Persönliche Sachen (Kleidung, Bücher, Laptop). Bettwäsche und Handtücher stellen wir auf Wunsch.</p>
-      </div>
-    </div>
-  </section>
+<!-- WAVE -->
+<div class="wsep" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="1440" height="56" fill="#FFFEFB"/><path d="M0,28 C360,56 1080,0 1440,28 L1440,56 L0,56 Z" fill="#FAF7F2"/></svg></div>
 
-  <!-- CONTACT -->
-  <section id="kontakt" class="section-alt">
-    <div class="container">
-      <h2 class="section-title">Zimmer anfragen</h2>
-      <p class="section-desc">Interesse an einem Zimmer? Schreib uns eine Nachricht — wir melden uns innerhalb von 24 Stunden.</p>
-      
-      <div class="contact-section">
-        <div class="contact-info">
-          <div class="contact-item">
-            <span class="contact-icon">📧</span>
-            <div>
-              <h4>E-Mail</h4>
-              <p>office@maku-hanga.com</p>
+<!-- KONTAKT -->
+<section id="kontakt" aria-labelledby="h-kontakt">
+  <div class="wrap">
+    <div class="kg">
+      <div class="fw fi">
+        <span class="eyebrow">Kontakt</span>
+        <h2 id="h-kontakt">Schreiben Sie uns.</h2>
+        <p>Egal ob Zimmerinteresse, Besichtigungstermin oder allgemeine Frage —
+        wir freuen uns auf Ihre Nachricht und melden uns zeitnah.</p>
+
+        <form action="mailto:office@maku-hanga.com" method="post" enctype="text/plain" style="margin-top:1.5rem;">
+          <div class="frow">
+            <div class="fg2">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="fg2">
+              <label for="email">E‑Mail *</label>
+              <input type="email" id="email" name="email" required />
             </div>
           </div>
-          
-          <div class="contact-item">
-            <span class="contact-icon">📱</span>
-            <div>
-              <h4>Telefon</h4>
-              <p>+43 690 10401004</p>
-            </div>
+          <div class="fg2">
+            <label for="subject">Betreff</label>
+            <select id="subject" name="subject">
+              <option value="Zimmeranfrage">Zimmeranfrage</option>
+              <option value="Besichtigungstermin">Besichtigungstermin</option>
+              <option value="Allgemeine Frage">Allgemeine Frage</option>
+              <option value="Sonstiges">Sonstiges</option>
+            </select>
           </div>
-          
-          <div class="contact-item">
-            <span class="contact-icon">📍</span>
-            <div>
-              <h4>Standort</h4>
-              <p>Klagenfurt, Kärnten</p>
-            </div>
+          <div class="fg2">
+            <label for="message">Nachricht *</label>
+            <textarea id="message" name="message" required></textarea>
           </div>
-        </div>
-        
-        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-          <div class="form-group">
-            <label class="form-label">Name</label>
-            <input type="text" name="name" class="form-input" required />
-          </div>
-          
-          <div class="form-group">
-            <label class="form-label">E-Mail</label>
-            <input type="email" name="email" class="form-input" required />
-          </div>
-          
-          <div class="form-group">
-            <label class="form-label">Telefon</label>
-            <input type="tel" name="phone" class="form-input" />
-          </div>
-          
-          <div class="form-group">
-            <label class="form-label">Nachricht</label>
-            <textarea name="message" class="form-textarea" placeholder="Für welches Semester suchst du? Brauchst du ein Einzel- oder Doppelzimmer?" required></textarea>
-          </div>
-          
-          <button type="submit" class="btn btn-t">Anfrage senden →</button>
+          <button type="submit" class="btn btn-t" style="margin-top:1rem;">Nachricht senden →</button>
+          <p class="fprivacy">Mit dem Absenden stimmen Sie unserer <a href="datenschutz.html">Datenschutzerklärung</a> zu.</p>
         </form>
       </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <a href="index.html" class="logo" style="color: white; margin-bottom: 1.5rem; display: inline-block;">
-        <img src="logo.png" alt="Maku Hanga Logo" style="filter: brightness(0) invert(1);" />
-        <span>Maku Hanga</span>
-      </a>
-      
-      <div class="footer-links">
-        <a href="index.html" class="footer-link">Startseite</a>
-        <a href="index.html#services" class="footer-link">Services</a>
-        <a href="index.html#flats" class="footer-link">Wohnungen</a>
-        <a href="index.html#kontakt" class="footer-link">Kontakt</a>
-        <a href="impressum.html" class="footer-link">Impressum</a>
-        <a href="datenschutz.html" class="footer-link">Datenschutz</a>
+      <div class="ci fi">
+        <h3>Direkter Kontakt</h3>
+        <div class="cii">
+          <div class="cic">✉</div>
+          <div class="cit"><strong>E‑Mail</strong><a href="mailto:office@maku-hanga.com">office@maku-hanga.com</a></div>
+        </div>
+        <div class="cii">
+          <div class="cic">📞</div>
+          <div class="cit"><strong>Telefon</strong><a href="tel:+4369010401004">+43 690 1040 1004</a></div>
+        </div>
+        <div class="cii">
+          <div class="cic">🌐</div>
+          <div class="cit"><strong>Flats-Anfragen</strong><a href="mailto:office@maku-hanga.com?subject=Zimmeranfrage">office@maku-hanga.com</a></div>
+        </div>
+        <div class="chours">
+          <h4>Erreichbarkeit</h4>
+          <p>Mo–Fr 9–17 Uhr<br>Sa 10–14 Uhr<br>Sonntag geschlossen</p>
+        </div>
       </div>
-      
-      <p style="color: rgba(255,255,255,0.6); margin-top: 2rem; font-size: 0.9rem;">
-        © 2026 Maku Hanga — Dürrenmoos 11a, 9111 Völkermarkt, Österreich
-      </p>
     </div>
-  </footer>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer" role="contentinfo">
+  <div class="wrap">
+    <div class="ftop">
+      <div class="fbrand">
+        <img src="logo.png" alt="Maku Hanga" />
+        <p>Maku Hanga Flats — moderne Studentenwohnungen in Klagenfurt.
+        Aus Kärnten — für Kärnten.</p>
+        <div class="fbb">
+          <a href="mailto:office@maku-hanga.com">✉ E-Mail</a>
+          <a href="tel:+4369010401004">📞 Anrufen</a>
+          <a href="#flats-detail">🏠 Flats Info</a>
+        </div>
+      </div>
+      <div class="fcol">
+        <h4>Flats</h4>
+        <ul>
+          <li><a href="#flats-detail">Übersicht Wohnungen</a></li>
+          <li><a href="mailto:office@maku-hanga.com?subject=Zimmeranfrage">Zimmer anfragen (E-Mail)</a></li>
+          <li><a href="#kontakt">Kontaktformular</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Agentur</h4>
+        <ul>
+          <li><a href="index.html">Maku Hanga Hauptseite</a></li>
+          <li><a href="/#services">Agenturleistungen</a></li>
+          <li><a href="/#proj">Lizzy AI Solutions</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <p>© 2026 Maku Hanga – Elisabeth Reiner-Kovarik. Alle Rechte vorbehalten.</p>
+      <div class="fleg">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* Nav scroll */
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  /* Mobile menu */
+  function openMob() { document.getElementById('mob').classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeMob() { document.getElementById('mob').classList.remove('open'); document.body.style.overflow = ''; }
+
+  /* Scroll fade-in */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.fi').forEach(el => io.observe(el));
+
+  /* FAQ toggle */
+  function toggleFaq(el) {
+    const parent = el.parentElement;
+    const answer = parent.querySelector('.faq-a');
+    const isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-q').forEach(q => q.classList.remove('active'));
+    if (!isOpen) {
+      answer.classList.add('open');
+      el.classList.add('active');
+    }
+  }
+
+  /* Cookie */
+  function dismissCk() {
+    document.getElementById('ck').classList.add('gone');
+    try { sessionStorage.setItem('ck','1'); } catch(e) {}
+  }
+  try { if (sessionStorage.getItem('ck')) document.getElementById('ck').classList.add('gone'); } catch(e) {}
+</script>
 </body>
 </html>
