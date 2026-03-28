@@ -12,13 +12,13 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Maku Hanga – Wartungsmodus" />
   <meta property="og:description" content="Wir sind bald für Sie da! Unsere Website wird gerade überarbeitet." />
-  <meta property="og:image" content="logo.png" />
+  <meta property="og:image" content="construction_workers.jpg" />
   <meta property="og:url" content="https://www.maku-hanga.com" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="de_AT" />
   
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Maku Hanga – Wartungsmodus" />
   <meta name="twitter:description" content="Wir sind bald für Sie da! Unsere Website wird gerade überarbeitet." />
   
@@ -107,6 +107,30 @@
       color: var(--anthracite);
       margin-bottom: 2rem;
       opacity: 0.8;
+    }
+    
+    .maintenance-image {
+      width: 100%;
+      max-width: 600px;
+      margin: 2rem auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+      border: 3px solid white;
+    }
+    
+    .maintenance-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .image-caption {
+      font-size: 0.9rem;
+      color: var(--anthracite);
+      opacity: 0.6;
+      margin-top: 0.5rem;
+      font-style: italic;
     }
     
     .message {
@@ -329,6 +353,12 @@
     <h1><span class="highlight">Wartungsmodus</span> – Wir sind bald für Sie da!</h1>
     <p class="subtitle">Unsere Website wird gerade mit viel Liebe zum Detail überarbeitet.</p>
     
+    <div class="maintenance-image">
+      <!-- Platzhalter für KI-Bild: 2 Bauarbeiter auf Baustellensperrbalken sitzend, in Kamera winkend -->
+      <img src="construction_workers.jpg" alt="Zwei Bauarbeiter sitzen auf einem Baustellensperrbalken und winken in die Kamera" />
+      <div class="image-caption">Unsere Bauarbeiter winken Ihnen zu!</div>
+    </div>
+    
     <div class="message">
       <h2>Was passiert gerade?</h2>
       <p>Wir bauen unsere Website komplett neu auf – moderner, schneller und benutzerfreundlicher. Während wir an den letzten Details feilen, können Sie uns weiterhin kontaktieren.</p>
@@ -442,8 +472,8 @@
     // Update every minute
     setInterval(updateCountdown, 60000);
     
-    // Easter egg: Click on the logo
-    document.querySelector('.logo').addEventListener('click', function() {
+    // Easter egg: Click on the maintenance image
+    document.querySelector('.maintenance-image').addEventListener('click', function() {
       const messages = [
         "Wir sind zu zweit am Werk! 👷‍♂️👷‍♀️",
         "Doppelte Bauarbeiter, doppelte Power! 💪",
@@ -461,4 +491,13 @@
     const logo = document.querySelector('.logo');
     setInterval(() => {
       logo.style.transform = 'rotate(5deg)';
-      setTimeout
+      setTimeout(() => {
+        logo.style.transform = 'rotate(-5deg)';
+      }, 500);
+      setTimeout(() => {
+        logo.style.transform = 'rotate(0deg)';
+      }, 1000);
+    }, 5000);
+  </script>
+</body>
+</html>
